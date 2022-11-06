@@ -20,7 +20,7 @@ import (
 	"github.com/spf13/pflag"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
 )
 
 // InstallFlags configures the virtual kubelet flags.

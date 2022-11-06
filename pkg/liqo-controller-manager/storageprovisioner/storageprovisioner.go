@@ -22,8 +22,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/sig-storage-lib-external-provisioner/v7/controller"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	liqoerrors "github.com/liqotech/liqo/pkg/utils/errors"
+	"github.com/akaSomix/liqo/pkg/consts"
+	liqoerrors "github.com/akaSomix/liqo/pkg/utils/errors"
 )
 
 // +kubebuilder:rbac:groups=core,resources=persistentvolumeclaims;persistentvolumes,verbs=get;list;watch;create;delete;update

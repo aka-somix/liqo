@@ -19,9 +19,9 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/discoverymanager/utils"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
+	"github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/discoverymanager/utils"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
 )
 
 // check if the ForeignCluster CR does not have a value in one of the required fields (Namespace and ClusterID)

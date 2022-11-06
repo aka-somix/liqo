@@ -18,7 +18,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 )
 
 // UniqueName returns a user-friendly name that is unique *in the context of the current cluster*.

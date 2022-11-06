@@ -29,8 +29,8 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	"k8s.io/utils/pointer"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
 )
 
 var _ = Describe("Pods", func() {

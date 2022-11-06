@@ -19,12 +19,12 @@ import (
 
 	v1 "k8s.io/api/core/v1"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/utils/pod"
-	"github.com/liqotech/liqo/pkg/virtualKubelet"
-	vk "github.com/liqotech/liqo/pkg/vkMachinery"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/utils/pod"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet"
+	vk "github.com/akaSomix/liqo/pkg/vkMachinery"
 )
 
 func getDefaultStorageClass(storageClasses []sharingv1alpha1.StorageType) sharingv1alpha1.StorageType {

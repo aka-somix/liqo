@@ -24,13 +24,13 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/klog/v2"
 
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	liqoclient "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	liqoinformers "github.com/liqotech/liqo/pkg/client/informers/externalversions"
-	vkv1alpha1listers "github.com/liqotech/liqo/pkg/client/listers/virtualkubelet/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	liqoclient "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	liqoinformers "github.com/akaSomix/liqo/pkg/client/informers/externalversions"
+	vkv1alpha1listers "github.com/akaSomix/liqo/pkg/client/listers/virtualkubelet/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
 )
 
 // Handler implements the logic to start and stop the reflection of resources.

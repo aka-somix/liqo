@@ -23,11 +23,11 @@ import (
 	"k8s.io/klog/v2"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	authservice "github.com/liqotech/liqo/internal/auth-service"
-	identitymanager "github.com/liqotech/liqo/pkg/identityManager"
-	"github.com/liqotech/liqo/pkg/utils/apiserver"
-	"github.com/liqotech/liqo/pkg/utils/args"
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
+	authservice "github.com/akaSomix/liqo/internal/auth-service"
+	identitymanager "github.com/akaSomix/liqo/pkg/identityManager"
+	"github.com/akaSomix/liqo/pkg/utils/apiserver"
+	"github.com/akaSomix/liqo/pkg/utils/args"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
 )
 
 func main() {

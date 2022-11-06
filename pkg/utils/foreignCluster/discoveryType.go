@@ -15,8 +15,8 @@
 package foreigncluster
 
 import (
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/discovery"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/discovery"
 )
 
 // GetDiscoveryType returns the discovery type for the given ForeignCluster.

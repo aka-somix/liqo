@@ -26,9 +26,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/utils/getters"
-	liqolabels "github.com/liqotech/liqo/pkg/utils/labels"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/utils/getters"
+	liqolabels "github.com/akaSomix/liqo/pkg/utils/labels"
 )
 
 // ServiceWatcher reconciles Service objects to retrieve the Wireguard endpoint.

@@ -18,7 +18,7 @@ import (
 	"flag"
 	"fmt"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 type liqonetCommonFlags struct {

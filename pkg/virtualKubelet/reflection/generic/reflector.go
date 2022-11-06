@@ -30,9 +30,9 @@ import (
 	"k8s.io/klog/v2"
 	"k8s.io/utils/trace"
 
-	traceutils "github.com/liqotech/liqo/pkg/utils/trace"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	traceutils "github.com/akaSomix/liqo/pkg/utils/trace"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 var _ manager.Reflector = (*reflector)(nil)

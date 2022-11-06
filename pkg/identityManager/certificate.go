@@ -29,9 +29,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/klog/v2"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/auth"
-	"github.com/liqotech/liqo/pkg/discovery"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/auth"
+	"github.com/akaSomix/liqo/pkg/discovery"
 )
 
 // StoreIdentity stores the identity to authenticate with a remote cluster.

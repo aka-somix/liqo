@@ -20,7 +20,7 @@ import (
 	kerrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/klog/v2"
 
-	autherrors "github.com/liqotech/liqo/pkg/auth/errors"
+	autherrors "github.com/akaSomix/liqo/pkg/auth/errors"
 )
 
 func (authService *Controller) handleError(w http.ResponseWriter, err error) {

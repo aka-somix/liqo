@@ -19,12 +19,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/liqotech/liqo/pkg/auth"
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
-	"github.com/liqotech/liqo/pkg/liqoctl/peeroob"
-	"github.com/liqotech/liqo/pkg/utils"
-	foreigncluster "github.com/liqotech/liqo/pkg/utils/foreignCluster"
+	"github.com/akaSomix/liqo/pkg/auth"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/liqoctl/peeroob"
+	"github.com/akaSomix/liqo/pkg/utils"
+	foreigncluster "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
 )
 
 // Options encapsulates the arguments of the generate peer-command command.

@@ -43,14 +43,14 @@ import (
 	"k8s.io/utils/trace"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	vkv1alpha1clients "github.com/liqotech/liqo/pkg/client/clientset/versioned/typed/virtualkubelet/v1alpha1"
-	vkv1alpha1listers "github.com/liqotech/liqo/pkg/client/listers/virtualkubelet/v1alpha1"
-	"github.com/liqotech/liqo/pkg/liqonet/ipam"
-	"github.com/liqotech/liqo/pkg/utils/pod"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/generic"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	vkv1alpha1clients "github.com/akaSomix/liqo/pkg/client/clientset/versioned/typed/virtualkubelet/v1alpha1"
+	vkv1alpha1listers "github.com/akaSomix/liqo/pkg/client/listers/virtualkubelet/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/liqonet/ipam"
+	"github.com/akaSomix/liqo/pkg/utils/pod"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/generic"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
 )
 
 var _ manager.NamespacedReflector = (*NamespacedPodReflector)(nil)

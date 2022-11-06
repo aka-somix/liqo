@@ -33,8 +33,8 @@ import (
 	"k8s.io/client-go/util/workqueue"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/internal/crdReplicator/resources"
-	"github.com/liqotech/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/internal/crdReplicator/resources"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 // Manager represents an object creating reflectors towards remote clusters.

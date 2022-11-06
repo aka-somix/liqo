@@ -17,7 +17,7 @@ package status
 import (
 	"context"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
 )
 
 // Options encapsulates the arguments of the status command.

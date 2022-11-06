@@ -33,12 +33,12 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/discovery"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
-	"github.com/liqotech/liqo/pkg/vkMachinery/forge"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/vkMachinery/forge"
 )
 
 const (

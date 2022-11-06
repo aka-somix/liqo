@@ -27,7 +27,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 const (

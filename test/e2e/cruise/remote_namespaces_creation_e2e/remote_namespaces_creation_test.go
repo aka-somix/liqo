@@ -29,13 +29,13 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	offloadingv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	virtualkubeletv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	"github.com/liqotech/liqo/internal/crdReplicator/reflection"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	"github.com/liqotech/liqo/test/e2e/testutils/tester"
-	"github.com/liqotech/liqo/test/e2e/testutils/util"
+	offloadingv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	virtualkubeletv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	"github.com/akaSomix/liqo/internal/crdReplicator/reflection"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	"github.com/akaSomix/liqo/test/e2e/testutils/tester"
+	"github.com/akaSomix/liqo/test/e2e/testutils/util"
 )
 
 const (

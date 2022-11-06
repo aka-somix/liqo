@@ -26,10 +26,10 @@ import (
 	"k8s.io/client-go/util/retry"
 	"k8s.io/klog/v2"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqonet/errors"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqonet/errors"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 // Interface is the interface to be implemented for

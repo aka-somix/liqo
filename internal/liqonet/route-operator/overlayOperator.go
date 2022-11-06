@@ -28,9 +28,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	liqoerrors "github.com/liqotech/liqo/pkg/liqonet/errors"
-	"github.com/liqotech/liqo/pkg/liqonet/overlay"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	liqoerrors "github.com/akaSomix/liqo/pkg/liqonet/errors"
+	"github.com/akaSomix/liqo/pkg/liqonet/overlay"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 var (

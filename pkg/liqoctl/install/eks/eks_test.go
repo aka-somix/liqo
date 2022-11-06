@@ -23,8 +23,8 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
 )
 
 func TestFetchingParameters(t *testing.T) {

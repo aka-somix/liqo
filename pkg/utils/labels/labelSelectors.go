@@ -24,7 +24,7 @@ import (
 	"k8s.io/apimachinery/pkg/selection"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 var (

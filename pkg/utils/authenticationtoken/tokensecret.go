@@ -28,7 +28,7 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/liqotech/liqo/pkg/discovery"
+	"github.com/akaSomix/liqo/pkg/discovery"
 )
 
 const (

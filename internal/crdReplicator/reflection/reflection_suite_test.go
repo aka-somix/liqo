@@ -20,7 +20,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 func TestReflection(t *testing.T) {

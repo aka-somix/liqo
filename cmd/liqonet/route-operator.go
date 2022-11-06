@@ -28,13 +28,13 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/cache"
 
-	routeoperator "github.com/liqotech/liqo/internal/liqonet/route-operator"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqonet/overlay"
-	liqorouting "github.com/liqotech/liqo/pkg/liqonet/routing"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
-	"github.com/liqotech/liqo/pkg/utils/mapper"
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
+	routeoperator "github.com/akaSomix/liqo/internal/liqonet/route-operator"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqonet/overlay"
+	liqorouting "github.com/akaSomix/liqo/pkg/liqonet/routing"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
+	"github.com/akaSomix/liqo/pkg/utils/mapper"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
 )
 
 type routeOperatorFlags struct {

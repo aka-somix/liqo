@@ -18,7 +18,7 @@ import (
 	netv1 "k8s.io/api/networking/v1"
 	netv1apply "k8s.io/client-go/applyconfigurations/networking/v1"
 
-	"github.com/liqotech/liqo/pkg/utils/maps"
+	"github.com/akaSomix/liqo/pkg/utils/maps"
 )
 
 // RemoteIngress forges the apply patch for the reflected ingress, given the local one.

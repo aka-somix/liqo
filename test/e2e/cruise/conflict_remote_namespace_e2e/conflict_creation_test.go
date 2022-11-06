@@ -29,11 +29,11 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	offloadingv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	"github.com/liqotech/liqo/test/e2e/testutils/tester"
-	"github.com/liqotech/liqo/test/e2e/testutils/util"
+	offloadingv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	"github.com/akaSomix/liqo/test/e2e/testutils/tester"
+	"github.com/akaSomix/liqo/test/e2e/testutils/util"
 )
 
 const (

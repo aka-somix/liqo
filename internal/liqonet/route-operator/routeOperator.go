@@ -31,11 +31,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/event"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqonet/overlay"
-	liqorouting "github.com/liqotech/liqo/pkg/liqonet/routing"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqonet/overlay"
+	liqorouting "github.com/akaSomix/liqo/pkg/liqonet/routing"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 var (

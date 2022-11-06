@@ -21,7 +21,7 @@ import (
 	"github.com/spf13/pflag"
 	"k8s.io/kubectl/pkg/cmd/util"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/docs"
+	"github.com/akaSomix/liqo/pkg/liqoctl/docs"
 )
 
 func newDocsCommand(ctx context.Context) *cobra.Command {

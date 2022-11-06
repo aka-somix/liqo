@@ -18,8 +18,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	offv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	offv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 // GetNamespaceOffloading gets the right NamespaceOffloading according to the specified strategy.

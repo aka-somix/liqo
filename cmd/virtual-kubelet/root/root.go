@@ -31,12 +31,12 @@ import (
 	"k8s.io/client-go/tools/record"
 	"k8s.io/klog/v2"
 
-	identitymanager "github.com/liqotech/liqo/pkg/identityManager"
-	tenantnamespace "github.com/liqotech/liqo/pkg/tenantNamespace"
-	"github.com/liqotech/liqo/pkg/utils"
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
-	nodeprovider "github.com/liqotech/liqo/pkg/virtualKubelet/liqoNodeProvider"
-	podprovider "github.com/liqotech/liqo/pkg/virtualKubelet/provider"
+	identitymanager "github.com/akaSomix/liqo/pkg/identityManager"
+	tenantnamespace "github.com/akaSomix/liqo/pkg/tenantNamespace"
+	"github.com/akaSomix/liqo/pkg/utils"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
+	nodeprovider "github.com/akaSomix/liqo/pkg/virtualKubelet/liqoNodeProvider"
+	podprovider "github.com/akaSomix/liqo/pkg/virtualKubelet/provider"
 )
 
 const defaultVersion = "v1.25.0" // This should follow the version of k8s.io/kubernetes we are importing

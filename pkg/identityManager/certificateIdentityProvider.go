@@ -30,11 +30,11 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/discovery"
-	responsetypes "github.com/liqotech/liqo/pkg/identityManager/responseTypes"
-	tenantnamespace "github.com/liqotech/liqo/pkg/tenantNamespace"
-	certificateSigningRequest "github.com/liqotech/liqo/pkg/utils/csr"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	responsetypes "github.com/akaSomix/liqo/pkg/identityManager/responseTypes"
+	tenantnamespace "github.com/akaSomix/liqo/pkg/tenantNamespace"
+	certificateSigningRequest "github.com/akaSomix/liqo/pkg/utils/csr"
 )
 
 // random package initialization.

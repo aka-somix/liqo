@@ -25,10 +25,10 @@ import (
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
 
-	virtualkubeletv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	versioned "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/liqotech/liqo/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/liqotech/liqo/pkg/client/listers/virtualkubelet/v1alpha1"
+	virtualkubeletv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	versioned "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/akaSomix/liqo/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/akaSomix/liqo/pkg/client/listers/virtualkubelet/v1alpha1"
 )
 
 // NamespaceMapInformer provides access to a shared informer and lister for

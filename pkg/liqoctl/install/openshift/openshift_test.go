@@ -21,7 +21,7 @@ import (
 	. "github.com/onsi/gomega"
 	configv1api "github.com/openshift/api/config/v1"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
 )
 
 func TestFetchingParameters(t *testing.T) {

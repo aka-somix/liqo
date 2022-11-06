@@ -20,11 +20,11 @@ import (
 
 	"k8s.io/apimachinery/pkg/labels"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
-	"github.com/liqotech/liqo/pkg/liqoctl/util"
-	"github.com/liqotech/liqo/pkg/utils"
-	"github.com/liqotech/liqo/pkg/utils/getters"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/liqoctl/util"
+	"github.com/akaSomix/liqo/pkg/utils"
+	"github.com/akaSomix/liqo/pkg/utils/getters"
 )
 
 // LocalInfoChecker implements the Check interface.

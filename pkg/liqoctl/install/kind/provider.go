@@ -17,8 +17,8 @@ package kind
 import (
 	"context"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
-	"github.com/liqotech/liqo/pkg/liqoctl/install/kubeadm"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install/kubeadm"
 )
 
 var _ install.Provider = (*Options)(nil)

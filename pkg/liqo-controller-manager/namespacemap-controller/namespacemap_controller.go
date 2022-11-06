@@ -32,9 +32,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	"github.com/liqotech/liqo/internal/crdReplicator/reflection"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	"github.com/akaSomix/liqo/internal/crdReplicator/reflection"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 // NamespaceMapReconciler creates remote namespaces and updates NamespaceMaps Status.

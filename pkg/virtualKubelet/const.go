@@ -14,7 +14,7 @@
 
 package virtualKubelet
 
-import discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+import discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 
 const (
 	// VirtualNodePrefix -> the prefix used to generate the virtual node name.

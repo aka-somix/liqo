@@ -24,7 +24,7 @@ import (
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
 
-	virtualkubeletv1alpha1 "github.com/liqotech/liqo/pkg/client/clientset/versioned/typed/virtualkubelet/v1alpha1"
+	virtualkubeletv1alpha1 "github.com/akaSomix/liqo/pkg/client/clientset/versioned/typed/virtualkubelet/v1alpha1"
 )
 
 type Interface interface {

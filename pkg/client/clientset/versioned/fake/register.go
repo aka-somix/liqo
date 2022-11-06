@@ -23,7 +23,7 @@ import (
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 
-	virtualkubeletv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
+	virtualkubeletv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
 )
 
 var scheme = runtime.NewScheme()

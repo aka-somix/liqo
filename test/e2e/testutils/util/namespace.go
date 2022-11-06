@@ -27,10 +27,10 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	offloadingv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/test/e2e/testconsts"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	offloadingv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/test/e2e/testconsts"
 )
 
 // EnforceNamespace creates and returns a namespace. If it already exists, it just returns the namespace.

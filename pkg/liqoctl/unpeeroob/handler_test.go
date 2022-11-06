@@ -24,9 +24,9 @@ import (
 	"k8s.io/client-go/kubernetes/scheme"
 	ctrlfake "sigs.k8s.io/controller-runtime/pkg/client/fake"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	. "github.com/liqotech/liqo/pkg/utils/testutil"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	. "github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 const foreignClusterName = "foreign-cluster"

@@ -26,9 +26,9 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/test/e2e/testutils/tester"
-	"github.com/liqotech/liqo/test/e2e/testutils/util"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/test/e2e/testutils/tester"
+	"github.com/akaSomix/liqo/test/e2e/testutils/util"
 )
 
 func Test_Unjoin(t *testing.T) {

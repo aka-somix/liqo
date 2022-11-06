@@ -15,8 +15,8 @@
 package foreigncluster
 
 import (
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 // GetPeeringPhase returns the peering phase of a given ForignCluster CR.

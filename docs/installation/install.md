@@ -331,7 +331,7 @@ Alternatively, you can manually specify a desired name with the `--cluster-name`
 ## Customization options
 
 The following lists the main **customization parameters** exposed by the *liqoctl install* commands, along with a brief description.
-Additionally, **arbitrary parameters** available in the Helm *values* file (the full list is provided in the dedicated [repository page](https://github.com/liqotech/liqo/tree/master/deployments/liqo)) can be modified through the `--set` flag, which supports the standard Helm syntax.
+Additionally, **arbitrary parameters** available in the Helm *values* file (the full list is provided in the dedicated [repository page](https://github.com/akaSomix/liqo/tree/master/deployments/liqo)) can be modified through the `--set` flag, which supports the standard Helm syntax.
 
 ### Global
 
@@ -396,7 +396,7 @@ To install Liqo directly with Helm, it is possible to proceed as follows:
    ````
 
 4. Appropriately configure the *values* file.
-   The full list of options is provided in the dedicated [repository page](https://github.com/liqotech/liqo/tree/master/deployments/liqo).
+   The full list of options is provided in the dedicated [repository page](https://github.com/akaSomix/liqo/tree/master/deployments/liqo).
 
 5. Install Liqo:
 

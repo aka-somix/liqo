@@ -22,9 +22,9 @@ import (
 	"k8s.io/klog/v2"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	peeringconditionsutils "github.com/liqotech/liqo/pkg/utils/peeringConditions"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	peeringconditionsutils "github.com/akaSomix/liqo/pkg/utils/peeringConditions"
 )
 
 // validateForeignCluster contains the logic that validates and defaults labels and spec fields.

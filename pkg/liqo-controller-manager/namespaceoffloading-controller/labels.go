@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/klog/v2"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 func (r *NamespaceOffloadingReconciler) enforceSchedulingLabelPresence(ctx context.Context, namespaceName string) error {

@@ -27,12 +27,12 @@ import (
 	"k8s.io/client-go/informers"
 	"k8s.io/client-go/tools/cache"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	identitymanager "github.com/liqotech/liqo/pkg/identityManager"
-	idManTest "github.com/liqotech/liqo/pkg/identityManager/testUtils"
-	tenantnamespace "github.com/liqotech/liqo/pkg/tenantNamespace"
-	"github.com/liqotech/liqo/pkg/utils/apiserver"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	identitymanager "github.com/akaSomix/liqo/pkg/identityManager"
+	idManTest "github.com/akaSomix/liqo/pkg/identityManager/testUtils"
+	tenantnamespace "github.com/akaSomix/liqo/pkg/tenantNamespace"
+	"github.com/akaSomix/liqo/pkg/utils/apiserver"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 func TestAuthService(t *testing.T) {

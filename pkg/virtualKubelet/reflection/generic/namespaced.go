@@ -26,8 +26,8 @@ import (
 	"k8s.io/client-go/tools/record"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 // NamespacedReflector implements the logic common to all namespaced reflectors.

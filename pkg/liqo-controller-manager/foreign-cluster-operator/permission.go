@@ -21,9 +21,9 @@ import (
 	rbacv1 "k8s.io/api/rbac/v1"
 	"k8s.io/klog/v2"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
 )
 
 func (r *ForeignClusterReconciler) ensurePermission(ctx context.Context, foreignCluster *discoveryv1alpha1.ForeignCluster) (err error) {

@@ -19,12 +19,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/completion"
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/move"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
-	"github.com/liqotech/liqo/pkg/utils"
-	"github.com/liqotech/liqo/pkg/utils/args"
+	"github.com/akaSomix/liqo/pkg/liqoctl/completion"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/move"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/utils"
+	"github.com/akaSomix/liqo/pkg/utils/args"
 )
 
 const liqoctlMoveVolumeLongHelp = `Move a Liqo-managed PVC to a different node (i.e., cluster).

@@ -24,8 +24,8 @@ import (
 	"k8s.io/client-go/dynamic"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/uninstaller"
-	"github.com/liqotech/liqo/pkg/utils"
+	"github.com/akaSomix/liqo/pkg/uninstaller"
+	"github.com/akaSomix/liqo/pkg/utils"
 )
 
 // cluster-role

@@ -28,7 +28,7 @@ import (
 	"github.com/virtual-kubelet/virtual-kubelet/log/klogv2"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/cmd/virtual-kubelet/root"
+	"github.com/akaSomix/liqo/cmd/virtual-kubelet/root"
 )
 
 func main() {

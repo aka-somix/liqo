@@ -25,14 +25,14 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/cache"
 
-	"github.com/liqotech/liqo/internal/liqonet/network-manager/netcfgcreator"
-	"github.com/liqotech/liqo/internal/liqonet/network-manager/tunnelendpointcreator"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	liqonetIpam "github.com/liqotech/liqo/pkg/liqonet/ipam"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
-	"github.com/liqotech/liqo/pkg/utils/args"
-	"github.com/liqotech/liqo/pkg/utils/mapper"
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
+	"github.com/akaSomix/liqo/internal/liqonet/network-manager/netcfgcreator"
+	"github.com/akaSomix/liqo/internal/liqonet/network-manager/tunnelendpointcreator"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	liqonetIpam "github.com/akaSomix/liqo/pkg/liqonet/ipam"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
+	"github.com/akaSomix/liqo/pkg/utils/args"
+	"github.com/akaSomix/liqo/pkg/utils/mapper"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
 )
 
 type networkManagerFlags struct {

@@ -18,8 +18,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/inband"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/inband"
 )
 
 // Options encapsulates the arguments of the peer in-band command.

@@ -32,8 +32,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	traceutils "github.com/liqotech/liqo/pkg/utils/trace"
+	"github.com/akaSomix/liqo/pkg/consts"
+	traceutils "github.com/akaSomix/liqo/pkg/utils/trace"
 )
 
 const (

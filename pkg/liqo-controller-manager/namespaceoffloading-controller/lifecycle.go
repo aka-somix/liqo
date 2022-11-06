@@ -21,8 +21,8 @@ import (
 	"k8s.io/klog/v2"
 	ctrlutils "sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	offv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	mapsv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
+	offv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	mapsv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
 )
 
 func (r *NamespaceOffloadingReconciler) deletionLogic(ctx context.Context,

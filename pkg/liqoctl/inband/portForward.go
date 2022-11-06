@@ -31,8 +31,8 @@ import (
 	"k8s.io/client-go/transport/spdy"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/liqotech/liqo/pkg/utils/getters"
-	liqolabels "github.com/liqotech/liqo/pkg/utils/labels"
+	"github.com/akaSomix/liqo/pkg/utils/getters"
+	liqolabels "github.com/akaSomix/liqo/pkg/utils/labels"
 )
 
 // PortForwardOptions contains all the options in order to port-forward a pod's port.

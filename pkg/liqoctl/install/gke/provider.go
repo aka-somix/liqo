@@ -25,8 +25,8 @@ import (
 	"google.golang.org/api/option"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
 )
 
 var _ install.Provider = (*Options)(nil)

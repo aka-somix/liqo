@@ -25,7 +25,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/klog/v2"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 func (discovery *Controller) register(ctx context.Context) {

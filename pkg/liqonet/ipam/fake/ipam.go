@@ -20,8 +20,8 @@ import (
 
 	grpc "google.golang.org/grpc"
 
-	"github.com/liqotech/liqo/pkg/liqonet/ipam"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	"github.com/akaSomix/liqo/pkg/liqonet/ipam"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 // IPAMClient provides a mock implementation of the IPAMClient interface for testing purposes.

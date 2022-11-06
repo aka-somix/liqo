@@ -31,8 +31,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/event"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 // Reconciler reconciles a ShadowPod object.

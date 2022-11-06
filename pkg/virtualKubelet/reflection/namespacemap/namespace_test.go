@@ -20,9 +20,9 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	liqoclient "github.com/liqotech/liqo/pkg/client/clientset/versioned/fake"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/namespacemap/fake"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	liqoclient "github.com/akaSomix/liqo/pkg/client/clientset/versioned/fake"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/namespacemap/fake"
 )
 
 var _ = Describe("NamespaceMapEventHandler tests", func() {

@@ -30,10 +30,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/utils"
-	liqoerrors "github.com/liqotech/liqo/pkg/utils/errors"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/utils"
+	liqoerrors "github.com/akaSomix/liqo/pkg/utils/errors"
 )
 
 // createNamespace creates a new namespace associated with a NamespaceMap. It returns whether a possible error

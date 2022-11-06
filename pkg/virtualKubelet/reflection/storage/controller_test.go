@@ -21,7 +21,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/utils/pointer"
 
-	"github.com/liqotech/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 var _ = Describe("controller methods", func() {

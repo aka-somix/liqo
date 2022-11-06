@@ -26,12 +26,12 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	sharing "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	"github.com/liqotech/liqo/pkg/discovery"
-	fcutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	liqolabels "github.com/liqotech/liqo/pkg/utils/labels"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	sharing "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	fcutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	liqolabels "github.com/akaSomix/liqo/pkg/utils/labels"
 )
 
 // peeringCache is a cache that holds the peeringInfo for each peered cluster.

@@ -25,9 +25,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
 )
 
 var (

@@ -35,15 +35,15 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/discovery"
-	identitymanager "github.com/liqotech/liqo/pkg/identityManager"
-	peeringroles "github.com/liqotech/liqo/pkg/peering-roles"
-	tenantnamespace "github.com/liqotech/liqo/pkg/tenantNamespace"
-	peeringconditionsutils "github.com/liqotech/liqo/pkg/utils/peeringConditions"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	identitymanager "github.com/akaSomix/liqo/pkg/identityManager"
+	peeringroles "github.com/akaSomix/liqo/pkg/peering-roles"
+	tenantnamespace "github.com/akaSomix/liqo/pkg/tenantNamespace"
+	peeringconditionsutils "github.com/akaSomix/liqo/pkg/utils/peeringConditions"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 const (

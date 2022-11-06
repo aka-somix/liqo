@@ -17,7 +17,7 @@ package fake
 import (
 	"context"
 
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 // Reflector implements a fake Reflector for testing purposes.

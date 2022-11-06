@@ -21,8 +21,8 @@ import (
 
 	rest "k8s.io/client-go/rest"
 
-	v1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	"github.com/liqotech/liqo/pkg/client/clientset/versioned/scheme"
+	v1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/client/clientset/versioned/scheme"
 )
 
 type VirtualkubeletV1alpha1Interface interface {

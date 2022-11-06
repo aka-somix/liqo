@@ -24,8 +24,8 @@ import (
 	"github.com/grandcat/zeroconf"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/auth"
-	"github.com/liqotech/liqo/pkg/discoverymanager/utils"
+	"github.com/akaSomix/liqo/pkg/auth"
+	"github.com/akaSomix/liqo/pkg/discoverymanager/utils"
 )
 
 func (discovery *Controller) startResolver(ctx context.Context) {

@@ -31,11 +31,11 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/cache"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/remotemetrics"
-	cachedclient "github.com/liqotech/liqo/pkg/utils/cachedClient"
-	"github.com/liqotech/liqo/pkg/utils/mapper"
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/remotemetrics"
+	cachedclient "github.com/akaSomix/liqo/pkg/utils/cachedClient"
+	"github.com/akaSomix/liqo/pkg/utils/mapper"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
 )
 
 // cluster-role

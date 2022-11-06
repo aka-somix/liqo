@@ -27,7 +27,7 @@ import (
 	"k8s.io/apimachinery/pkg/selection"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 var _ = Describe("Watcher functions", func() {

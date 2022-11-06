@@ -35,7 +35,7 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/aws-iam-authenticator/pkg/token"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 )
 
 type tokenManager interface {

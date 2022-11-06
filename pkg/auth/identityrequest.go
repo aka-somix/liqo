@@ -17,7 +17,7 @@ package auth
 import (
 	"encoding/base64"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 )
 
 // IdentityRequest is the common interface for Certificate and ServiceAccount identity request.

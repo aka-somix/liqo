@@ -22,9 +22,9 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	offloadingv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	offloadingv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
 )
 
 // NoLimit is a constant to specify that autocompletion is not limited depending on the number of arguments.

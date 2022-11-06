@@ -33,17 +33,17 @@ import (
 	metricsv1beta1 "k8s.io/metrics/pkg/client/clientset/versioned/typed/metrics/v1beta1"
 	"k8s.io/utils/trace"
 
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	liqoclient "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	liqoclientfake "github.com/liqotech/liqo/pkg/client/clientset/versioned/fake"
-	liqoinformers "github.com/liqotech/liqo/pkg/client/informers/externalversions"
-	"github.com/liqotech/liqo/pkg/consts"
-	fakeipam "github.com/liqotech/liqo/pkg/liqonet/ipam/fake"
-	. "github.com/liqotech/liqo/pkg/utils/testutil"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/workload"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	liqoclient "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	liqoclientfake "github.com/akaSomix/liqo/pkg/client/clientset/versioned/fake"
+	liqoinformers "github.com/akaSomix/liqo/pkg/client/informers/externalversions"
+	"github.com/akaSomix/liqo/pkg/consts"
+	fakeipam "github.com/akaSomix/liqo/pkg/liqonet/ipam/fake"
+	. "github.com/akaSomix/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/workload"
 )
 
 var _ = Describe("Namespaced Pod Reflection Tests", func() {

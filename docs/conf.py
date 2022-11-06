@@ -102,9 +102,9 @@ external_toc_exclude_missing = True
 # __get_download_url returns the download URL for the given file, for the latest or the given GitHub release.
 def __get_download_url(file: str) -> str:
     if 'current_version' not in html_context or not __is_sem_version(html_context['current_version']):
-        return f"https://github.com/liqotech/liqo/releases/latest/download/{file}"
+        return f"https://github.com/akaSomix/liqo/releases/latest/download/{file}"
     else:
-        return f"https://github.com/liqotech/liqo/releases/download/{html_context['current_version']}/{file}"
+        return f"https://github.com/akaSomix/liqo/releases/download/{html_context['current_version']}/{file}"
 
 # generate_clone_example generates the clone and checkout code for the given example.
 def generate_clone_example(example_name: str) -> str:
@@ -113,7 +113,7 @@ def generate_clone_example(example_name: str) -> str:
         x = requests.get('https://api.github.com/repos/liqotech/liqo/releases/latest')
         version = x.json()['tag_name']
     return f"```bash\n\
-git clone https://github.com/liqotech/liqo.git\n\
+git clone https://github.com/akaSomix/liqo.git\n\
 cd liqo\n\
 git checkout {version}\n\
 cd examples/{example_name}\n\

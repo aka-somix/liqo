@@ -22,7 +22,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 const (

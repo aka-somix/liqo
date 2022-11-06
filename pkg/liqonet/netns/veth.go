@@ -29,10 +29,10 @@ import (
 	"k8s.io/client-go/util/retry"
 	"k8s.io/klog/v2"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	liqoneterrors "github.com/liqotech/liqo/pkg/liqonet/errors"
-	liqorouting "github.com/liqotech/liqo/pkg/liqonet/routing"
-	"github.com/liqotech/liqo/pkg/liqonet/utils/links"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	liqoneterrors "github.com/akaSomix/liqo/pkg/liqonet/errors"
+	liqorouting "github.com/akaSomix/liqo/pkg/liqonet/routing"
+	"github.com/akaSomix/liqo/pkg/liqonet/utils/links"
 )
 
 // CreateVethPair it will create veth pair in hostNetns and move one of them in gatewayNetns.

@@ -215,7 +215,7 @@ jobs:
       - name: Build Liqoctl
         run: >
           go build -o liqoctl-${{ matrix.goos }}-${{ matrix.goarch }}
-          -ldflags="-s -w -X 'github.com/liqotech/liqo/pkg/liqoctl/version.liqoctlVersion=${{ needs.configure.outputs.commit-ref }}'"
+          -ldflags="-s -w -X 'github.com/akaSomix/liqo/pkg/liqoctl/version.liqoctlVersion=${{ needs.configure.outputs.commit-ref }}'"
           ./cmd/liqoctl
         env:
           CGO_ENABLED: 0

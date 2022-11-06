@@ -25,8 +25,8 @@ import (
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
 
-	v1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	scheme "github.com/liqotech/liqo/pkg/client/clientset/versioned/scheme"
+	v1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	scheme "github.com/akaSomix/liqo/pkg/client/clientset/versioned/scheme"
 )
 
 // ShadowPodsGetter has a method to return a ShadowPodInterface.

@@ -22,10 +22,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/utils"
-	foreigncluster "github.com/liqotech/liqo/pkg/utils/foreignCluster"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/utils"
+	foreigncluster "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
 )
 
 // ensureResourceRequest ensures the presence of a resource request to be sent to the specified ForeignCluster.

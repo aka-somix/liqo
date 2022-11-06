@@ -17,7 +17,7 @@ package fake
 import (
 	"context"
 
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 // NamespacedReflector implements a fake NamespacedReflector for testing purposes.

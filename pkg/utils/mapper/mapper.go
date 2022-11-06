@@ -26,11 +26,11 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/klog/v2"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	offv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	virtualKubeletv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	offv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	virtualKubeletv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
 )
 
 type LiqoMapper func(c *rest.Config) (meta.RESTMapper, error)

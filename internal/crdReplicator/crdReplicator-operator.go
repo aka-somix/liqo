@@ -30,13 +30,13 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/event"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/internal/crdReplicator/reflection"
-	"github.com/liqotech/liqo/internal/crdReplicator/resources"
-	"github.com/liqotech/liqo/pkg/consts"
-	identitymanager "github.com/liqotech/liqo/pkg/identityManager"
-	foreigncluster "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	traceutils "github.com/liqotech/liqo/pkg/utils/trace"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/internal/crdReplicator/reflection"
+	"github.com/akaSomix/liqo/internal/crdReplicator/resources"
+	"github.com/akaSomix/liqo/pkg/consts"
+	identitymanager "github.com/akaSomix/liqo/pkg/identityManager"
+	foreigncluster "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	traceutils "github.com/akaSomix/liqo/pkg/utils/trace"
 )
 
 const (

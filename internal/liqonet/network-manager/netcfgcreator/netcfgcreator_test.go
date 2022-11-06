@@ -27,12 +27,12 @@ import (
 	controllerruntime "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	liqoerrors "github.com/liqotech/liqo/pkg/utils/errors"
-	peeringconditionsutils "github.com/liqotech/liqo/pkg/utils/peeringConditions"
-	"github.com/liqotech/liqo/pkg/utils/syncset"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	liqoerrors "github.com/akaSomix/liqo/pkg/utils/errors"
+	peeringconditionsutils "github.com/akaSomix/liqo/pkg/utils/peeringConditions"
+	"github.com/akaSomix/liqo/pkg/utils/syncset"
 )
 
 var _ = Describe("NetworkConfigCreator Controller", func() {

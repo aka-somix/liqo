@@ -26,10 +26,10 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"sigs.k8s.io/controller-runtime/pkg/envtest"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 const (

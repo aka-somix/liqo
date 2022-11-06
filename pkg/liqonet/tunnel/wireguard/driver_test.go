@@ -22,8 +22,8 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 const (

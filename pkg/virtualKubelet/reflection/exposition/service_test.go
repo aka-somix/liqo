@@ -27,12 +27,12 @@ import (
 	"k8s.io/client-go/tools/record"
 	"k8s.io/utils/trace"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	. "github.com/liqotech/liqo/pkg/utils/testutil"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/exposition"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	"github.com/akaSomix/liqo/pkg/consts"
+	. "github.com/akaSomix/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/exposition"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 var _ = Describe("Service Reflection Tests", func() {

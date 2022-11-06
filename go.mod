@@ -1,4 +1,4 @@
-module github.com/liqotech/liqo
+module github.com/akaSomix/liqo
 
 go 1.19
 

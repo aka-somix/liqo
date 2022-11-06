@@ -30,8 +30,8 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	responsetypes "github.com/liqotech/liqo/pkg/identityManager/responseTypes"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	responsetypes "github.com/akaSomix/liqo/pkg/identityManager/responseTypes"
 )
 
 const (

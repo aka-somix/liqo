@@ -28,7 +28,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/cluster"
 
-	"github.com/liqotech/liqo/pkg/utils/mapper"
+	"github.com/akaSomix/liqo/pkg/utils/mapper"
 )
 
 // GetCachedClient returns a controller runtime client with the cache initialized only for the resources added to

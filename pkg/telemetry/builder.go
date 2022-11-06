@@ -24,14 +24,14 @@ import (
 	"k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/klog/v2"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	offloadingv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/discovery"
-	"github.com/liqotech/liqo/pkg/utils"
-	liqogetters "github.com/liqotech/liqo/pkg/utils/getters"
-	labelsutils "github.com/liqotech/liqo/pkg/utils/labels"
-	peeringconditionsutils "github.com/liqotech/liqo/pkg/utils/peeringConditions"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	offloadingv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	"github.com/akaSomix/liqo/pkg/utils"
+	liqogetters "github.com/akaSomix/liqo/pkg/utils/getters"
+	labelsutils "github.com/akaSomix/liqo/pkg/utils/labels"
+	peeringconditionsutils "github.com/akaSomix/liqo/pkg/utils/peeringConditions"
 )
 
 // ForgeTelemetryItem returns a Telemetry item with the current status of the cluster.

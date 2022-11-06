@@ -22,7 +22,7 @@ import (
 	"github.com/pterm/pterm"
 	"k8s.io/client-go/kubernetes/scheme"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
 )
 
 func TestStatus(t *testing.T) {

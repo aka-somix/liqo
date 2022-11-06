@@ -23,7 +23,7 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/client-go/rest"
 
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
 )
 
 var _ = Describe("The rate limiting utility functions", func() {

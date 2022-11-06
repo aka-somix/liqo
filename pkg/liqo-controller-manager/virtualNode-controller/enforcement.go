@@ -26,11 +26,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	ctrlutils "sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	mapsv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/utils"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	mapsv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/utils"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
 )
 
 // ensureNamespaceMapPresence creates a new NamespaceMap associated with that virtual-node if it is not already present.

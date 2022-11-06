@@ -21,18 +21,18 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
-	"github.com/liqotech/liqo/pkg/liqoctl/install/aks"
-	"github.com/liqotech/liqo/pkg/liqoctl/install/eks"
-	"github.com/liqotech/liqo/pkg/liqoctl/install/generic"
-	"github.com/liqotech/liqo/pkg/liqoctl/install/gke"
-	"github.com/liqotech/liqo/pkg/liqoctl/install/k3s"
-	"github.com/liqotech/liqo/pkg/liqoctl/install/kind"
-	"github.com/liqotech/liqo/pkg/liqoctl/install/kubeadm"
-	"github.com/liqotech/liqo/pkg/liqoctl/install/openshift"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
-	"github.com/liqotech/liqo/pkg/utils/args"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install/aks"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install/eks"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install/generic"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install/gke"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install/k3s"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install/kind"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install/kubeadm"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install/openshift"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/utils/args"
 )
 
 const liqoctlInstallLongHelp = `Install/upgrade Liqo in the selected cluster.
@@ -97,7 +97,7 @@ func newInstallCommand(ctx context.Context, f *factory.Factory) *cobra.Command {
 	sharingPercentage := args.Percentage{Val: 90}
 	reservedSubnets := args.CIDRList{}
 
-	defaultRepoURL := "https://github.com/liqotech/liqo"
+	defaultRepoURL := "https://github.com/akaSomix/liqo"
 
 	var cmd = &cobra.Command{
 		Use:     "install",

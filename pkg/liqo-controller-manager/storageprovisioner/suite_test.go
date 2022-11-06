@@ -22,7 +22,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"sigs.k8s.io/controller-runtime/pkg/envtest"
 
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 var (

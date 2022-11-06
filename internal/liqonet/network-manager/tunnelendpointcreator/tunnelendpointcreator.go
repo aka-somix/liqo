@@ -34,16 +34,16 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/internal/liqonet/network-manager/netcfgcreator"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	liqonetIpam "github.com/liqotech/liqo/pkg/liqonet/ipam"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
-	"github.com/liqotech/liqo/pkg/utils"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	"github.com/liqotech/liqo/pkg/utils/getters"
-	traceutils "github.com/liqotech/liqo/pkg/utils/trace"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/internal/liqonet/network-manager/netcfgcreator"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	liqonetIpam "github.com/akaSomix/liqo/pkg/liqonet/ipam"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
+	"github.com/akaSomix/liqo/pkg/utils"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	"github.com/akaSomix/liqo/pkg/utils/getters"
+	traceutils "github.com/akaSomix/liqo/pkg/utils/trace"
 )
 
 type networkParam struct {

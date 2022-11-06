@@ -30,7 +30,7 @@ import (
 	"k8s.io/klog/v2"
 	"k8s.io/kubectl/pkg/cmd/util"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
 )
 
 var liqoctl string

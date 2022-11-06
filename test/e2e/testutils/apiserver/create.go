@@ -27,7 +27,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/liqotech/liqo/test/e2e/testutils/util"
+	"github.com/akaSomix/liqo/test/e2e/testutils/util"
 )
 
 const (

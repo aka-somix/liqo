@@ -20,12 +20,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	offloadingv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	"github.com/liqotech/liqo/pkg/liqoctl/completion"
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/offload"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
-	"github.com/liqotech/liqo/pkg/utils/args"
+	offloadingv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/liqoctl/completion"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/offload"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/utils/args"
 )
 
 const liqoctlOffloadNamespaceLongHelp = `Offload a namespace to remote clusters.

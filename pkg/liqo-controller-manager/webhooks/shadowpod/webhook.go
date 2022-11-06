@@ -27,13 +27,13 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	liqogetters "github.com/liqotech/liqo/pkg/utils/getters"
-	liqolabels "github.com/liqotech/liqo/pkg/utils/labels"
-	pod "github.com/liqotech/liqo/pkg/utils/pod"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	liqogetters "github.com/akaSomix/liqo/pkg/utils/getters"
+	liqolabels "github.com/akaSomix/liqo/pkg/utils/labels"
+	pod "github.com/akaSomix/liqo/pkg/utils/pod"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
 )
 
 // cluster-role

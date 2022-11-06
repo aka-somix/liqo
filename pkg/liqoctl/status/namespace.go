@@ -21,7 +21,7 @@ import (
 	"github.com/pterm/pterm"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
 )
 
 const nsCheckerName = "Namespace existence check"

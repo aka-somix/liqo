@@ -15,8 +15,8 @@
 package foreigncluster
 
 import (
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	peeringconditionsutils "github.com/liqotech/liqo/pkg/utils/peeringConditions"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	peeringconditionsutils "github.com/akaSomix/liqo/pkg/utils/peeringConditions"
 )
 
 // IsAuthenticated checks if the identity has been accepted by the remote cluster.

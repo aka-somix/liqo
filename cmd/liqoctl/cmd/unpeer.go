@@ -20,11 +20,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/completion"
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
-	"github.com/liqotech/liqo/pkg/liqoctl/unpeerib"
-	"github.com/liqotech/liqo/pkg/liqoctl/unpeeroob"
+	"github.com/akaSomix/liqo/pkg/liqoctl/completion"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/liqoctl/unpeerib"
+	"github.com/akaSomix/liqo/pkg/liqoctl/unpeeroob"
 )
 
 const liqoctlUnpeerLongHelp = `Disable a peering towards a remote cluster.

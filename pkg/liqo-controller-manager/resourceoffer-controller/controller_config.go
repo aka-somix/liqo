@@ -19,8 +19,8 @@ import (
 
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/vkMachinery/forge"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/vkMachinery/forge"
 )
 
 // NewResourceOfferController creates and returns a new reconciler for the ResourceOffers.

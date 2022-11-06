@@ -22,7 +22,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/aws/aws-sdk-go/service/eks"
 
-	"github.com/liqotech/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 // getClusterInfo retrieved information from the EKS cluster.

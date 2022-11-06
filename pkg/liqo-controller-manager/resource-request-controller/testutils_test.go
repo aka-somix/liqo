@@ -25,11 +25,11 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	resourcemonitors "github.com/liqotech/liqo/pkg/liqo-controller-manager/resource-request-controller/resource-monitors"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	resourcemonitors "github.com/akaSomix/liqo/pkg/liqo-controller-manager/resource-request-controller/resource-monitors"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
 )
 
 // DefaultScaleFactor defines the amount of scaled resources to be computed in resourceOffers.

@@ -27,9 +27,9 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/discovery"
-	"github.com/liqotech/liqo/test/e2e/testutils/tester"
-	"github.com/liqotech/liqo/test/e2e/testutils/util"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	"github.com/akaSomix/liqo/test/e2e/testutils/tester"
+	"github.com/akaSomix/liqo/test/e2e/testutils/util"
 )
 
 func TestE2E(t *testing.T) {

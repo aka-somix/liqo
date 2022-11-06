@@ -24,7 +24,7 @@ import (
 	"github.com/grandcat/zeroconf"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 )
 
 // clusterRole

@@ -26,15 +26,15 @@ import (
 	"k8s.io/klog/v2"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	crdreplicator "github.com/liqotech/liqo/internal/crdReplicator"
-	"github.com/liqotech/liqo/internal/crdReplicator/reflection"
-	"github.com/liqotech/liqo/internal/crdReplicator/resources"
-	identitymanager "github.com/liqotech/liqo/pkg/identityManager"
-	tenantnamespace "github.com/liqotech/liqo/pkg/tenantNamespace"
-	"github.com/liqotech/liqo/pkg/utils/args"
-	"github.com/liqotech/liqo/pkg/utils/mapper"
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	crdreplicator "github.com/akaSomix/liqo/internal/crdReplicator"
+	"github.com/akaSomix/liqo/internal/crdReplicator/reflection"
+	"github.com/akaSomix/liqo/internal/crdReplicator/resources"
+	identitymanager "github.com/akaSomix/liqo/pkg/identityManager"
+	tenantnamespace "github.com/akaSomix/liqo/pkg/tenantNamespace"
+	"github.com/akaSomix/liqo/pkg/utils/args"
+	"github.com/akaSomix/liqo/pkg/utils/mapper"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
 )
 
 var scheme = runtime.NewScheme()

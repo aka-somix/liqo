@@ -32,9 +32,9 @@ import (
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/tools/cache"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 var _ = Describe("Handler tests", func() {

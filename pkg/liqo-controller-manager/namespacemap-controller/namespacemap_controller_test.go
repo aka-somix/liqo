@@ -29,10 +29,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 	ctrlutils "sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	namespacemapctrl "github.com/liqotech/liqo/pkg/liqo-controller-manager/namespacemap-controller"
-	. "github.com/liqotech/liqo/pkg/utils/testutil"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	namespacemapctrl "github.com/akaSomix/liqo/pkg/liqo-controller-manager/namespacemap-controller"
+	. "github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 var _ = Describe("Enforcement logic", func() {

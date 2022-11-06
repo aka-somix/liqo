@@ -6,7 +6,7 @@ ENV K8S_VERSION=1.25.0
 # Install required go binaries
 RUN go install github.com/ory/go-acc@v0.2.8
 
-WORKDIR /go/src/github.com/liqotech/liqo
+WORKDIR /go/src/github.com/akaSomix/liqo
 COPY go.mod ./go.mod
 COPY go.sum ./go.sum
 RUN  go mod download

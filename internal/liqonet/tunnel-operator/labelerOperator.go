@@ -26,8 +26,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
-	liqolabels "github.com/liqotech/liqo/pkg/utils/labels"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
+	liqolabels "github.com/akaSomix/liqo/pkg/utils/labels"
 )
 
 // +kubebuilder:rbac:groups=core,resources=pods,verbs=get;list;watch;update

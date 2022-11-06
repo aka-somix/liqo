@@ -24,10 +24,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	foreigncluster "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	"github.com/liqotech/liqo/pkg/vkMachinery/forge"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	foreigncluster "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	"github.com/akaSomix/liqo/pkg/vkMachinery/forge"
 )
 
 // setControllerReference sets owner reference to the related ForeignCluster.

@@ -20,9 +20,9 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/klog/v2"
 
-	offv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/utils"
+	offv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/utils"
 )
 
 // getVirtualNodeToleration returns a new Toleration for the Liqo's virtual-nodes.

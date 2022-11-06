@@ -37,11 +37,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	"github.com/liqotech/liqo/internal/crdReplicator/reflection"
-	"github.com/liqotech/liqo/pkg/vkMachinery"
-	"github.com/liqotech/liqo/pkg/vkMachinery/forge"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	"github.com/akaSomix/liqo/internal/crdReplicator/reflection"
+	"github.com/akaSomix/liqo/pkg/vkMachinery"
+	"github.com/akaSomix/liqo/pkg/vkMachinery/forge"
 )
 
 const resourceOfferAnnotation = "liqo.io/resourceoffer"

@@ -17,7 +17,7 @@ package foreigncluster
 import (
 	"k8s.io/klog/v2"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 )
 
 // AllowIncomingPeering returns the value set in the ForeignCluster spec if it has been set,

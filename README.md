@@ -1,7 +1,7 @@
 <!-- markdownlint-disable first-line-h1 -->
 <p align="center">
-  <a href="https://github.com/liqotech/liqo/actions"><img src="https://github.com/liqotech/liqo/workflows/Go/badge.svg" alt="Integration Pipeline Status"></a>
-  <a href="https://goreportcard.com/report/github.com/liqotech/liqo"><img src=https://goreportcard.com/badge/github.com/liqotech/liqo></a>
+  <a href="https://github.com/akaSomix/liqo/actions"><img src="https://github.com/akaSomix/liqo/workflows/Go/badge.svg" alt="Integration Pipeline Status"></a>
+  <a href="https://goreportcard.com/report/github.com/akaSomix/liqo"><img src=https://goreportcard.com/badge/github.com/akaSomix/liqo></a>
   <a href="https://coveralls.io/github/liqotech/liqo" alt="Liqo Test Coverage"><img src=https://coveralls.io/repos/github/liqotech/liqo/badge.svg?branch=master></a>
   <a href="https://docs.liqo.io/en/stable" alt="Liqo's Documentation"><img src="https://readthedocs.org/projects/liqo/badge/"></a>
   <a href="https://join.slack.com/t/liqo-io/shared_invite/zt-h20212gg-g24YvN6MKiD9bacFeqZttQ"><img src=https://img.shields.io/badge/slack-liqo.io-blueviolet?logo=slack></a>
@@ -16,7 +16,7 @@
   <br />
   <br />
 
-  <a href="https://github.com/liqotech/liqo">
+  <a href="https://github.com/akaSomix/liqo">
     <img alt="Liqo Logo" src="docs/_static/images/common/liqo-logo-blue.svg" height="80">
   </a>
   <br />
@@ -31,9 +31,9 @@
     <br />
     <a href="https://www.youtube.com/channel/UCYbWJMfwy3P6xT4JI_K84xw">View Videos</a>
     ·
-    <a href="https://github.com/liqotech/liqo/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
+    <a href="https://github.com/akaSomix/liqo/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
     ·
-    <a href="https://github.com/liqotech/liqo/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=%5BFeature%5D">Request Feature</a>
+    <a href="https://github.com/akaSomix/liqo/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=%5BFeature%5D">Request Feature</a>
 </p>
 
 ## What is Liqo?

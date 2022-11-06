@@ -29,9 +29,9 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/utils/pointer"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/test/e2e/testutils/tester"
-	testutils "github.com/liqotech/liqo/test/e2e/testutils/util"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/test/e2e/testutils/tester"
+	testutils "github.com/akaSomix/liqo/test/e2e/testutils/util"
 )
 
 const (

@@ -22,8 +22,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
-	"github.com/liqotech/liqo/pkg/liqoctl/util"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/liqoctl/util"
 )
 
 var _ install.Provider = (*Options)(nil)

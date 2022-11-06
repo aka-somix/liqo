@@ -28,7 +28,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/resource"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 type FakeGRPCServer struct {

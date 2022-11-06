@@ -23,7 +23,7 @@ import (
 	netv1apply "k8s.io/client-go/applyconfigurations/networking/v1"
 	"k8s.io/utils/pointer"
 
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
 )
 
 var _ = Describe("Ingresses Forging", func() {

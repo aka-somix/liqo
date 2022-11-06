@@ -28,13 +28,13 @@ import (
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/tools/cache"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	liqoclient "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	vkalpha1scheme "github.com/liqotech/liqo/pkg/client/clientset/versioned/scheme"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	vkv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	liqoclient "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	vkalpha1scheme "github.com/akaSomix/liqo/pkg/client/clientset/versioned/scheme"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 const (

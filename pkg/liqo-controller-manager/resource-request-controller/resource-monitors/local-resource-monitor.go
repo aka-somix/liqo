@@ -33,10 +33,10 @@ import (
 	"k8s.io/klog/v2"
 	resourcehelper "k8s.io/kubectl/pkg/util/resource"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/utils"
-	liqoerrors "github.com/liqotech/liqo/pkg/utils/errors"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/utils"
+	liqoerrors "github.com/akaSomix/liqo/pkg/utils/errors"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
 )
 
 // LocalResourceMonitor is an object that keeps track of the cluster's resources.

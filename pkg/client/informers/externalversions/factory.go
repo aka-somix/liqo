@@ -26,9 +26,9 @@ import (
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 
-	versioned "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/liqotech/liqo/pkg/client/informers/externalversions/internalinterfaces"
-	virtualkubelet "github.com/liqotech/liqo/pkg/client/informers/externalversions/virtualkubelet"
+	versioned "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/akaSomix/liqo/pkg/client/informers/externalversions/internalinterfaces"
+	virtualkubelet "github.com/akaSomix/liqo/pkg/client/informers/externalversions/virtualkubelet"
 )
 
 // SharedInformerOption defines the functional option type for SharedInformerFactory.

@@ -28,15 +28,15 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	offloadingv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/telemetry"
-	argsutils "github.com/liqotech/liqo/pkg/utils/args"
-	"github.com/liqotech/liqo/pkg/utils/mapper"
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	offloadingv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/telemetry"
+	argsutils "github.com/akaSomix/liqo/pkg/utils/args"
+	"github.com/akaSomix/liqo/pkg/utils/mapper"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
 )
 
 var scheme = runtime.NewScheme()

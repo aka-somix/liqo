@@ -22,9 +22,9 @@ import (
 	"github.com/virtual-kubelet/virtual-kubelet/node"
 	corev1 "k8s.io/api/core/v1"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	argsutils "github.com/liqotech/liqo/pkg/utils/args"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	argsutils "github.com/akaSomix/liqo/pkg/utils/args"
 )
 
 const (

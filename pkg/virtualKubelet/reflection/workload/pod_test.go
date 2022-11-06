@@ -31,12 +31,12 @@ import (
 	metricsv1beta1 "k8s.io/metrics/pkg/client/clientset/versioned/typed/metrics/v1beta1"
 	"k8s.io/utils/trace"
 
-	fakeipam "github.com/liqotech/liqo/pkg/liqonet/ipam/fake"
-	. "github.com/liqotech/liqo/pkg/utils/testutil"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/workload"
+	fakeipam "github.com/akaSomix/liqo/pkg/liqonet/ipam/fake"
+	. "github.com/akaSomix/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/workload"
 )
 
 var _ = Describe("Pod Reflection Tests", func() {

@@ -24,9 +24,9 @@ import (
 	"golang.org/x/sys/unix"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/apis/net/v1alpha1"
-	liqoneterrors "github.com/liqotech/liqo/pkg/liqonet/errors"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	"github.com/akaSomix/liqo/apis/net/v1alpha1"
+	liqoneterrors "github.com/akaSomix/liqo/pkg/liqonet/errors"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 const (

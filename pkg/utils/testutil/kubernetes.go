@@ -19,8 +19,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/record"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 // FakeHelmValues returns a fake helm values map.

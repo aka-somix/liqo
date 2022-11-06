@@ -26,7 +26,7 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/rest"
 
-	"github.com/liqotech/liqo/pkg/utils/apiserver"
+	"github.com/akaSomix/liqo/pkg/utils/apiserver"
 )
 
 var _ = Describe("The API server configuration", func() {

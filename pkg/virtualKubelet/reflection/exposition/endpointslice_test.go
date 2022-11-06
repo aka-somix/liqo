@@ -30,13 +30,13 @@ import (
 	"k8s.io/client-go/tools/record"
 	"k8s.io/utils/trace"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	fakeipam "github.com/liqotech/liqo/pkg/liqonet/ipam/fake"
-	. "github.com/liqotech/liqo/pkg/utils/testutil"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/exposition"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	"github.com/akaSomix/liqo/pkg/consts"
+	fakeipam "github.com/akaSomix/liqo/pkg/liqonet/ipam/fake"
+	. "github.com/akaSomix/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/exposition"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 var _ = Describe("EndpointSlice Reflection Tests", func() {

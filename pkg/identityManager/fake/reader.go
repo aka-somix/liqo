@@ -19,7 +19,7 @@ import (
 
 	"k8s.io/client-go/rest"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 )
 
 // IdentityReader is a struct implementing an IdentityReader mock for testing purposes.

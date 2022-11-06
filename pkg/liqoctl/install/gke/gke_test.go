@@ -21,8 +21,8 @@ import (
 	. "github.com/onsi/gomega"
 	"google.golang.org/api/container/v1"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
 )
 
 func TestFetchingParameters(t *testing.T) {

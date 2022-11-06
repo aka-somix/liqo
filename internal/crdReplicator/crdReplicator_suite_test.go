@@ -28,12 +28,12 @@ import (
 	"k8s.io/client-go/kubernetes/scheme"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	crdreplicator "github.com/liqotech/liqo/internal/crdReplicator"
-	"github.com/liqotech/liqo/internal/crdReplicator/reflection"
-	"github.com/liqotech/liqo/internal/crdReplicator/resources"
-	"github.com/liqotech/liqo/pkg/identityManager/fake"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	crdreplicator "github.com/akaSomix/liqo/internal/crdReplicator"
+	"github.com/akaSomix/liqo/internal/crdReplicator/reflection"
+	"github.com/akaSomix/liqo/internal/crdReplicator/resources"
+	"github.com/akaSomix/liqo/pkg/identityManager/fake"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 func TestCrdReplicator(t *testing.T) {

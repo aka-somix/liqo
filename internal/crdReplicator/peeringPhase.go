@@ -17,9 +17,9 @@ package crdreplicator
 import (
 	"k8s.io/klog/v2"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/internal/crdReplicator/resources"
-	"github.com/liqotech/liqo/pkg/consts"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/internal/crdReplicator/resources"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 // getPeeringPhase returns the peering phase for a cluster given its clusterID.

@@ -27,10 +27,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	"github.com/liqotech/liqo/pkg/discovery"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
 )
 
 // ensureForeignCluster ensures the ForeignCluster existence, if not exists we have to add a new one

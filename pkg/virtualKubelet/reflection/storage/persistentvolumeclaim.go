@@ -30,13 +30,13 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/sig-storage-lib-external-provisioner/v7/controller"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	liqostorageprovisioner "github.com/liqotech/liqo/pkg/liqo-controller-manager/storageprovisioner"
-	"github.com/liqotech/liqo/pkg/utils"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/generic"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	"github.com/akaSomix/liqo/pkg/consts"
+	liqostorageprovisioner "github.com/akaSomix/liqo/pkg/liqo-controller-manager/storageprovisioner"
+	"github.com/akaSomix/liqo/pkg/utils"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/generic"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 const (

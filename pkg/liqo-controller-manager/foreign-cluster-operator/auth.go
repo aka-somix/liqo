@@ -29,14 +29,14 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/auth"
-	"github.com/liqotech/liqo/pkg/discovery"
-	"github.com/liqotech/liqo/pkg/discoverymanager/utils"
-	"github.com/liqotech/liqo/pkg/utils/authenticationtoken"
-	csrutil "github.com/liqotech/liqo/pkg/utils/csr"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	peeringconditionsutils "github.com/liqotech/liqo/pkg/utils/peeringConditions"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/auth"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	"github.com/akaSomix/liqo/pkg/discoverymanager/utils"
+	"github.com/akaSomix/liqo/pkg/utils/authenticationtoken"
+	csrutil "github.com/akaSomix/liqo/pkg/utils/csr"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	peeringconditionsutils "github.com/akaSomix/liqo/pkg/utils/peeringConditions"
 )
 
 const (

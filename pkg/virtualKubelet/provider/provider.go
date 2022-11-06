@@ -27,17 +27,17 @@ import (
 	"k8s.io/client-go/tools/record"
 	metrics "k8s.io/metrics/pkg/client/clientset/versioned"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	vkalpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	liqoclient "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	"github.com/liqotech/liqo/pkg/liqonet/ipam"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/configuration"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/exposition"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/namespacemap"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/storage"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/workload"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	vkalpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	liqoclient "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	"github.com/akaSomix/liqo/pkg/liqonet/ipam"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/configuration"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/exposition"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/namespacemap"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/storage"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/workload"
 )
 
 func init() {

@@ -24,7 +24,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/liqotech/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 var _ = Describe("Secret Watcher functions", func() {

@@ -28,7 +28,7 @@ import (
 	"k8s.io/client-go/util/retry"
 	"k8s.io/utils/pointer"
 
-	liqolabels "github.com/liqotech/liqo/pkg/utils/labels"
+	liqolabels "github.com/akaSomix/liqo/pkg/utils/labels"
 )
 
 // ScaleDiscoveryDeployment scales the discovery deployment replicas to 0.

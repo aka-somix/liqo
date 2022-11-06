@@ -23,9 +23,9 @@ import (
 	"k8s.io/client-go/dynamic"
 	"k8s.io/klog/v2"
 
-	discoveryV1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	foreigncluster "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	peeringconditionsutils "github.com/liqotech/liqo/pkg/utils/peeringConditions"
+	discoveryV1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	foreigncluster "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	peeringconditionsutils "github.com/akaSomix/liqo/pkg/utils/peeringConditions"
 )
 
 // getForeignList retrieve the list of available ForeignCluster and return it as a ForeignClusterList object.

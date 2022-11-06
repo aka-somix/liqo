@@ -38,14 +38,14 @@ import (
 	k8s "k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	discv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqonet/conncheck"
-	"github.com/liqotech/liqo/pkg/liqonet/tunnel"
-	"github.com/liqotech/liqo/pkg/liqonet/tunnel/metrics"
-	"github.com/liqotech/liqo/pkg/liqonet/tunnel/resolver"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	discv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqonet/conncheck"
+	"github.com/akaSomix/liqo/pkg/liqonet/tunnel"
+	"github.com/akaSomix/liqo/pkg/liqonet/tunnel/metrics"
+	"github.com/akaSomix/liqo/pkg/liqonet/tunnel/resolver"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 const (

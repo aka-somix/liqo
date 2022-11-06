@@ -31,11 +31,11 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/dynamic/fake"
 
-	liqonetapi "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	liqoneterrors "github.com/liqotech/liqo/pkg/liqonet/errors"
-	"github.com/liqotech/liqo/pkg/liqonet/natmappinginflater"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	liqonetapi "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	liqoneterrors "github.com/akaSomix/liqo/pkg/liqonet/errors"
+	"github.com/akaSomix/liqo/pkg/liqonet/natmappinginflater"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 const (

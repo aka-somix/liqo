@@ -19,7 +19,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 // Manager manages the reflection of objects between the local and the remote cluster.

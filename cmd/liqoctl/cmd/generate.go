@@ -19,10 +19,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/completion"
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/generate"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/liqoctl/completion"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/generate"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
 )
 
 const liqoctlGeneratePeerLongHelp = `Generate the command to execute on another cluster to peer with the local cluster.

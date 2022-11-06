@@ -38,7 +38,7 @@ import (
 	"k8s.io/client-go/util/certificate"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/workload"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/workload"
 )
 
 type crtretriever func(*tls.ClientHelloInfo) (*tls.Certificate, error)

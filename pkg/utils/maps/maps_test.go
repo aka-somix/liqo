@@ -18,7 +18,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/liqotech/liqo/pkg/utils/maps"
+	"github.com/akaSomix/liqo/pkg/utils/maps"
 )
 
 var _ = Describe("Maps", func() {

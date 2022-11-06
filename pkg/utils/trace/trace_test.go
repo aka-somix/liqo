@@ -24,7 +24,7 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/utils/trace"
+	"github.com/akaSomix/liqo/pkg/utils/trace"
 )
 
 var _ = Describe("Trace utilities", func() {

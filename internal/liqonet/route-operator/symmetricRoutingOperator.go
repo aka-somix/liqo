@@ -27,10 +27,10 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	liqoerrors "github.com/liqotech/liqo/pkg/liqonet/errors"
-	"github.com/liqotech/liqo/pkg/liqonet/overlay"
-	"github.com/liqotech/liqo/pkg/liqonet/routing"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	liqoerrors "github.com/akaSomix/liqo/pkg/liqonet/errors"
+	"github.com/akaSomix/liqo/pkg/liqonet/overlay"
+	"github.com/akaSomix/liqo/pkg/liqonet/routing"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 const infoLogLevel = 4

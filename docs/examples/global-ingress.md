@@ -13,7 +13,7 @@ First, check that you are compliant with the [requirements](/examples/requiremen
 Additionally, this example requires [k3d](https://k3d.io/v5.4.1/#installation) to be installed in your system.
 Specifically, this tool is leveraged instead of KinD to match the [K8GB Sample Demo](https://www.k8gb.io/docs/local.html#sample-demo).
 
-To provision the playground, clone the [Liqo repository](https://github.com/liqotech/liqo) and run the setup script:
+To provision the playground, clone the [Liqo repository](https://github.com/akaSomix/liqo) and run the setup script:
 
 {{ env.config.html_context.generate_clone_example('global-ingress') }}
 

@@ -23,8 +23,8 @@ import (
 	. "github.com/onsi/gomega"
 	"k8s.io/utils/pointer"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqoctl/install"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqoctl/install"
 )
 
 func TestFetchingParameters(t *testing.T) {

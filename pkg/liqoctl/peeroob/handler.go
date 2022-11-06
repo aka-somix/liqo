@@ -23,13 +23,13 @@ import (
 	"k8s.io/utils/pointer"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/discovery"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
-	"github.com/liqotech/liqo/pkg/liqoctl/peer"
-	"github.com/liqotech/liqo/pkg/utils"
-	authenticationtokenutils "github.com/liqotech/liqo/pkg/utils/authenticationtoken"
-	foreigncluster "github.com/liqotech/liqo/pkg/utils/foreignCluster"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/liqoctl/peer"
+	"github.com/akaSomix/liqo/pkg/utils"
+	authenticationtokenutils "github.com/akaSomix/liqo/pkg/utils/authenticationtoken"
+	foreigncluster "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
 )
 
 // Options encapsulates the arguments of the peer out-of-band command.

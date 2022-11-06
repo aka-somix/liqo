@@ -24,9 +24,9 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/client-go/kubernetes"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	tenantnamespace "github.com/liqotech/liqo/pkg/tenantNamespace"
-	"github.com/liqotech/liqo/pkg/utils/csr"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	tenantnamespace "github.com/akaSomix/liqo/pkg/tenantNamespace"
+	"github.com/akaSomix/liqo/pkg/utils/csr"
 )
 
 type identityManager struct {

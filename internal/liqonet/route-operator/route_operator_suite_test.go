@@ -23,7 +23,7 @@ import (
 	"github.com/vishvananda/netlink"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/liqotech/liqo/pkg/liqonet/overlay"
+	"github.com/akaSomix/liqo/pkg/liqonet/overlay"
 )
 
 var (

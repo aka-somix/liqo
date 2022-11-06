@@ -41,7 +41,7 @@ linters-settings:
     sections:
     - standard                          # Captures all standard packages if they do not match another section.
     - default                           # Contains all imports that could not be matched to another section type.
-    - prefix(github.com/liqotech/liqo)  # Groups all imports with the specified Prefix.
+    - prefix(github.com/akaSomix/liqo)  # Groups all imports with the specified Prefix.
   goconst:
     min-len: 2
     min-occurrences: 2
@@ -56,7 +56,7 @@ linters-settings:
       # Conflicts with govet check-shadowing
       - sloppyReassign
   goimports:
-    local-prefixes: github.com/liqotech/liqo
+    local-prefixes: github.com/akaSomix/liqo
   govet:
     check-shadowing: true
   misspell:

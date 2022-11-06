@@ -23,7 +23,7 @@ import (
 	appsv1 "k8s.io/api/apps/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	liqolabels "github.com/liqotech/liqo/pkg/utils/labels"
+	liqolabels "github.com/akaSomix/liqo/pkg/utils/labels"
 )
 
 // RetrieveLiqoControllerManagerDeploymentArgs retrieves the list of arguments associated with the liqo controller manager deployment.

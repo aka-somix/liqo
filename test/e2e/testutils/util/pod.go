@@ -23,7 +23,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/utils/pod"
+	"github.com/akaSomix/liqo/pkg/utils/pod"
 )
 
 // PodType -> defines the type of a pod (local/remote).

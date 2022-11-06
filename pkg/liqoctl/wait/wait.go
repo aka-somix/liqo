@@ -23,13 +23,13 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	offloadingv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	"github.com/liqotech/liqo/pkg/liqoctl/output"
-	"github.com/liqotech/liqo/pkg/utils"
-	fcutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	getters "github.com/liqotech/liqo/pkg/utils/getters"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	offloadingv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	"github.com/akaSomix/liqo/pkg/liqoctl/output"
+	"github.com/akaSomix/liqo/pkg/utils"
+	fcutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	getters "github.com/akaSomix/liqo/pkg/utils/getters"
 )
 
 // Waiter is a struct that contains the necessary information to wait for resource events.

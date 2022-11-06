@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/resource"
 	"k8s.io/utils/pointer"
 
-	"github.com/liqotech/liqo/pkg/utils/pod"
+	"github.com/akaSomix/liqo/pkg/utils/pod"
 )
 
 var _ = Describe("Pod utility functions", func() {

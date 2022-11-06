@@ -18,7 +18,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/liqotech/liqo/pkg/utils/slice"
+	"github.com/akaSomix/liqo/pkg/utils/slice"
 )
 
 var _ = Describe("Slice utility functions", func() {

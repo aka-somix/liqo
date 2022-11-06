@@ -27,8 +27,8 @@ import (
 	"github.com/vishvananda/netlink"
 	"k8s.io/klog/v2"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/pkg/liqonet/overlay"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/liqonet/overlay"
 )
 
 var (

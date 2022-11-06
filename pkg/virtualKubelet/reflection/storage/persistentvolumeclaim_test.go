@@ -21,7 +21,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	. "github.com/liqotech/liqo/pkg/utils/testutil"
+	. "github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 var _ = Describe("reflector methods", func() {

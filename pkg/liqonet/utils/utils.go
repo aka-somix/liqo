@@ -28,9 +28,9 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	liqoneterrors "github.com/liqotech/liqo/pkg/liqonet/errors"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	liqoneterrors "github.com/akaSomix/liqo/pkg/liqonet/errors"
 )
 
 var (

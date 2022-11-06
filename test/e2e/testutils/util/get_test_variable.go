@@ -26,7 +26,7 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/liqotech/liqo/test/e2e/testconsts"
+	"github.com/akaSomix/liqo/test/e2e/testconsts"
 )
 
 // GetEnvironmentVariableOrDie retrieves the value of the environment variable named by the key.

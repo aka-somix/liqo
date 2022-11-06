@@ -32,8 +32,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	liqoerrors "github.com/liqotech/liqo/pkg/liqonet/errors"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
+	liqoerrors "github.com/akaSomix/liqo/pkg/liqonet/errors"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
 )
 
 var (

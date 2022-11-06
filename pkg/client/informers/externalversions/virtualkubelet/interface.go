@@ -17,8 +17,8 @@
 package virtualkubelet
 
 import (
-	internalinterfaces "github.com/liqotech/liqo/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/liqotech/liqo/pkg/client/informers/externalversions/virtualkubelet/v1alpha1"
+	internalinterfaces "github.com/akaSomix/liqo/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/akaSomix/liqo/pkg/client/informers/externalversions/virtualkubelet/v1alpha1"
 )
 
 // Interface provides access to each of this group's versions.

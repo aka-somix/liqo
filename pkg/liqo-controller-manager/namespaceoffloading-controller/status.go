@@ -22,9 +22,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/klog/v2"
 
-	offv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	mapsv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
+	offv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	mapsv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
 )
 
 // enforceStatus realigns the status of the NamespaceOffloading, depending on that of the NamespaceMaps.

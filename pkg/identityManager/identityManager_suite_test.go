@@ -30,12 +30,12 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/kubernetes"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/auth"
-	responsetypes "github.com/liqotech/liqo/pkg/identityManager/responseTypes"
-	tenantnamespace "github.com/liqotech/liqo/pkg/tenantNamespace"
-	"github.com/liqotech/liqo/pkg/utils/apiserver"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/auth"
+	responsetypes "github.com/akaSomix/liqo/pkg/identityManager/responseTypes"
+	tenantnamespace "github.com/akaSomix/liqo/pkg/tenantNamespace"
+	"github.com/akaSomix/liqo/pkg/utils/apiserver"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 var (

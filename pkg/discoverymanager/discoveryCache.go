@@ -20,7 +20,7 @@ import (
 
 	"github.com/jinzhu/copier"
 
-	"github.com/liqotech/liqo/pkg/auth"
+	"github.com/akaSomix/liqo/pkg/auth"
 )
 
 type discoveryData struct {

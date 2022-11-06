@@ -31,12 +31,12 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/internal/crdReplicator/reflection"
-	foreigncluster "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	"github.com/liqotech/liqo/pkg/utils/syncset"
-	traceutils "github.com/liqotech/liqo/pkg/utils/trace"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/internal/crdReplicator/reflection"
+	foreigncluster "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	"github.com/akaSomix/liqo/pkg/utils/syncset"
+	traceutils "github.com/akaSomix/liqo/pkg/utils/trace"
 )
 
 const componentName = "netcfgCreator"

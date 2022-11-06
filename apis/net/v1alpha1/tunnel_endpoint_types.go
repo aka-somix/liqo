@@ -17,7 +17,7 @@ package v1alpha1
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	discv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+	discv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 )
 
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!

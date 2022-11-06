@@ -28,12 +28,12 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/klog/v2"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/auth"
-	identitymanager "github.com/liqotech/liqo/pkg/identityManager"
-	peeringroles "github.com/liqotech/liqo/pkg/peering-roles"
-	tenantnamespace "github.com/liqotech/liqo/pkg/tenantNamespace"
-	"github.com/liqotech/liqo/pkg/utils/apiserver"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/auth"
+	identitymanager "github.com/akaSomix/liqo/pkg/identityManager"
+	peeringroles "github.com/akaSomix/liqo/pkg/peering-roles"
+	tenantnamespace "github.com/akaSomix/liqo/pkg/tenantNamespace"
+	"github.com/akaSomix/liqo/pkg/utils/apiserver"
 )
 
 // cluster-role

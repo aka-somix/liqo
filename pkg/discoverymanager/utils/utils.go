@@ -26,7 +26,7 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/auth"
+	"github.com/akaSomix/liqo/pkg/auth"
 )
 
 const (

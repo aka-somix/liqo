@@ -24,9 +24,9 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/tools/record"
 
-	liqoclient "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	liqoclientfake "github.com/liqotech/liqo/pkg/client/clientset/versioned/fake"
-	reflectionfake "github.com/liqotech/liqo/pkg/virtualKubelet/reflection/generic/fake"
+	liqoclient "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	liqoclientfake "github.com/akaSomix/liqo/pkg/client/clientset/versioned/fake"
+	reflectionfake "github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/generic/fake"
 )
 
 var _ = Describe("Manager tests", func() {

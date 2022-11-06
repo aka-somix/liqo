@@ -26,9 +26,9 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/tools/cache"
 
-	reflectionfake "github.com/liqotech/liqo/pkg/virtualKubelet/reflection/generic/fake"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/manager"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	reflectionfake "github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/generic/fake"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/manager"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 var _ = Describe("Reflector tests", func() {

@@ -20,7 +20,7 @@ import (
 	v1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/sig-storage-lib-external-provisioner/v7/controller"
 
-	"github.com/liqotech/liqo/pkg/utils"
+	"github.com/akaSomix/liqo/pkg/utils"
 )
 
 // Provision creates a storage asset and returns a PV object representing it.

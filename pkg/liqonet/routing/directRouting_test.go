@@ -23,7 +23,7 @@ import (
 	"github.com/vishvananda/netlink"
 	"golang.org/x/sys/unix"
 
-	"github.com/liqotech/liqo/pkg/liqonet/errors"
+	"github.com/akaSomix/liqo/pkg/liqonet/errors"
 )
 
 var (

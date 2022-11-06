@@ -32,11 +32,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/envtest"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	sharingv1alpha1 "github.com/liqotech/liqo/apis/sharing/v1alpha1"
-	resourcemonitors "github.com/liqotech/liqo/pkg/liqo-controller-manager/resource-request-controller/resource-monitors"
-	liqoerrors "github.com/liqotech/liqo/pkg/utils/errors"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	sharingv1alpha1 "github.com/akaSomix/liqo/apis/sharing/v1alpha1"
+	resourcemonitors "github.com/akaSomix/liqo/pkg/liqo-controller-manager/resource-request-controller/resource-monitors"
+	liqoerrors "github.com/akaSomix/liqo/pkg/utils/errors"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 var (

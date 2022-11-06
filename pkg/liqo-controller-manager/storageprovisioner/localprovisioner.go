@@ -24,8 +24,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/sig-storage-lib-external-provisioner/v7/controller"
 
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/utils"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/utils"
 )
 
 func (p *liqoLocalStorageProvisioner) provisionLocalPVC(ctx context.Context,

@@ -22,11 +22,11 @@ import (
 	"github.com/coreos/go-iptables/iptables"
 	"k8s.io/klog/v2"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqonet/errors"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
-	"github.com/liqotech/liqo/pkg/utils/slice"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqonet/errors"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
+	"github.com/akaSomix/liqo/pkg/utils/slice"
 )
 
 const (

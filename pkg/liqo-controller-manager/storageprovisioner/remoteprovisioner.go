@@ -25,8 +25,8 @@ import (
 	corev1listers "k8s.io/client-go/listers/core/v1"
 	"sigs.k8s.io/sig-storage-lib-external-provisioner/v7/controller"
 
-	"github.com/liqotech/liqo/pkg/utils/maps"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/utils/maps"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
 )
 
 // ProvisionRemotePVC ensures the existence of a remote PVC and returns a virtual PV for that remote storage device.

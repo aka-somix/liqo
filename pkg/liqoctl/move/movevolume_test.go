@@ -33,10 +33,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 
-	offv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqoctl/factory"
-	. "github.com/liqotech/liqo/pkg/utils/testutil"
+	offv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqoctl/factory"
+	. "github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 // Create an alias to avoid "dot" importing the gstruct package, as it conflicts with the Options struct.

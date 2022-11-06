@@ -28,12 +28,12 @@ import (
 	"k8s.io/client-go/dynamic"
 	"k8s.io/klog/v2"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/pkg/consts"
-	liqoneterrors "github.com/liqotech/liqo/pkg/liqonet/errors"
-	"github.com/liqotech/liqo/pkg/liqonet/natmappinginflater"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
-	"github.com/liqotech/liqo/pkg/utils/slice"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/consts"
+	liqoneterrors "github.com/akaSomix/liqo/pkg/liqonet/errors"
+	"github.com/akaSomix/liqo/pkg/liqonet/natmappinginflater"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
+	"github.com/akaSomix/liqo/pkg/utils/slice"
 )
 
 // Ipam Interface.

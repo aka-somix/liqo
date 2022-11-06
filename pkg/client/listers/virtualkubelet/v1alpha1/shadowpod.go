@@ -21,7 +21,7 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
 
-	v1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
+	v1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
 )
 
 // ShadowPodLister helps list ShadowPods.

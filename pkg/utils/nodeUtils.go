@@ -17,7 +17,7 @@ package utils
 import (
 	corev1 "k8s.io/api/core/v1"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 // IsNodeReady returns true if the passed node has the NodeReady condition = True, false otherwise.

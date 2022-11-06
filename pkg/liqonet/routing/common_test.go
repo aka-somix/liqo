@@ -22,7 +22,7 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/vishvananda/netlink"
 
-	"github.com/liqotech/liqo/pkg/liqonet/errors"
+	"github.com/akaSomix/liqo/pkg/liqonet/errors"
 )
 
 var (

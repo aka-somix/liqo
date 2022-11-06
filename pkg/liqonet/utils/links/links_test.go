@@ -19,7 +19,7 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/vishvananda/netlink"
 
-	"github.com/liqotech/liqo/pkg/liqonet/utils/links"
+	"github.com/akaSomix/liqo/pkg/liqonet/utils/links"
 )
 
 var _ = Describe("Links", func() {

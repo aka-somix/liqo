@@ -26,10 +26,10 @@ import (
 	"github.com/onsi/gomega/types"
 	kerrors "k8s.io/apimachinery/pkg/api/errors"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/auth"
-	autherrors "github.com/liqotech/liqo/pkg/auth/errors"
-	csrutil "github.com/liqotech/liqo/pkg/utils/csr"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/auth"
+	autherrors "github.com/akaSomix/liqo/pkg/auth/errors"
+	csrutil "github.com/akaSomix/liqo/pkg/utils/csr"
 )
 
 type tokenManagerMock struct {

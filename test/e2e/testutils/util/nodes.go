@@ -23,7 +23,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 // GetNodes returns the list of nodes of the cluster matching the given labels.

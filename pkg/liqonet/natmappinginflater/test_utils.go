@@ -23,8 +23,8 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	liqonetapi "github.com/liqotech/liqo/apis/net/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	liqonetapi "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 // ForgeNatMapping forges a NatMapping resource for a cluster received as parameter.

@@ -23,7 +23,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"github.com/liqotech/liqo/pkg/utils/apiserver"
+	"github.com/akaSomix/liqo/pkg/utils/apiserver"
 )
 
 var _ = Describe("Address", func() {

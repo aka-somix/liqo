@@ -26,10 +26,10 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/record"
 
-	liqoclient "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	liqoclientfake "github.com/liqotech/liqo/pkg/client/clientset/versioned/fake"
-	liqoinformers "github.com/liqotech/liqo/pkg/client/informers/externalversions"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	liqoclient "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	liqoclientfake "github.com/akaSomix/liqo/pkg/client/clientset/versioned/fake"
+	liqoinformers "github.com/akaSomix/liqo/pkg/client/informers/externalversions"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 var _ = Describe("Options", func() {

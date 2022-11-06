@@ -31,9 +31,9 @@ import (
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/tools/cache"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	"github.com/liqotech/liqo/internal/crdReplicator/resources"
-	"github.com/liqotech/liqo/pkg/consts"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	"github.com/akaSomix/liqo/internal/crdReplicator/resources"
+	"github.com/akaSomix/liqo/pkg/consts"
 )
 
 var _ = Describe("Reflector tests", func() {

@@ -85,7 +85,7 @@ And move it to a file location in your system `PATH`.
 ````
 `````
 
-Alternatively, you can manually download *liqoctl* from the [Liqo releases](https://github.com/liqotech/liqo/releases/) page on GitHub.
+Alternatively, you can manually download *liqoctl* from the [Liqo releases](https://github.com/akaSomix/liqo/releases/) page on GitHub.
 
 ## Install Kubectl plugin with Krew
 
@@ -110,7 +110,7 @@ You can install *liqoctl* building it from source.
 To do so, clone the Liqo repository, build the *liqoctl* binary, and move it to a file location in your system `PATH`:
 
 ```bash
-git clone https://github.com/liqotech/liqo.git
+git clone https://github.com/akaSomix/liqo.git
 cd liqo
 make ctl
 mv liqoctl /usr/local/bin/liqoctl

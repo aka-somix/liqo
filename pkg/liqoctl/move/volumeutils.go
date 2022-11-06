@@ -26,7 +26,7 @@ import (
 	"k8s.io/client-go/util/retry"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/liqotech/liqo/pkg/utils"
+	"github.com/akaSomix/liqo/pkg/utils"
 )
 
 func isLocalVolume(ctx context.Context, cl client.Client, pvc *corev1.PersistentVolumeClaim) (bool, *corev1.Node, error) {

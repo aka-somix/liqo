@@ -14,7 +14,7 @@
 
 package foreigncluster
 
-import discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+import discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 
 // IsNetworkingEnabled checks if the automatic creation/propagation of NetworkConfigs is enabled.
 func IsNetworkingEnabled(foreignCluster *discoveryv1alpha1.ForeignCluster) bool {

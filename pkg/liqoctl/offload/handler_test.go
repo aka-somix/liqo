@@ -20,7 +20,7 @@ import (
 	"github.com/onsi/gomega/types"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/liqotech/liqo/pkg/liqoctl/offload"
+	"github.com/akaSomix/liqo/pkg/liqoctl/offload"
 )
 
 var _ = Describe("Handler tests", func() {

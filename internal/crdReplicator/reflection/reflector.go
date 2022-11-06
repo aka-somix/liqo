@@ -35,9 +35,9 @@ import (
 	"k8s.io/klog/v2"
 	"k8s.io/utils/trace"
 
-	"github.com/liqotech/liqo/internal/crdReplicator/resources"
-	"github.com/liqotech/liqo/pkg/consts"
-	traceutils "github.com/liqotech/liqo/pkg/utils/trace"
+	"github.com/akaSomix/liqo/internal/crdReplicator/resources"
+	"github.com/akaSomix/liqo/pkg/consts"
+	traceutils "github.com/akaSomix/liqo/pkg/utils/trace"
 )
 
 // Reflector represents an object managing the reflection of resources towards a given remote cluster.

@@ -17,7 +17,7 @@ package util
 import (
 	"fmt"
 
-	"github.com/liqotech/liqo/test/e2e/testconsts"
+	"github.com/akaSomix/liqo/test/e2e/testconsts"
 )
 
 // GetClusterLabels provides the labels which characterize the indexed cluster

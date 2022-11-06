@@ -24,11 +24,11 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	offv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqo-controller-manager/webhooks/pod/testutils"
-	"github.com/liqotech/liqo/pkg/utils"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	offv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqo-controller-manager/webhooks/pod/testutils"
+	"github.com/akaSomix/liqo/pkg/utils"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 func TestWebhookManager(t *testing.T) {

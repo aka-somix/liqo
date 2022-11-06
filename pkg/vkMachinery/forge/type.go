@@ -17,7 +17,7 @@ package forge
 import (
 	"k8s.io/apimachinery/pkg/api/resource"
 
-	argsutils "github.com/liqotech/liqo/pkg/utils/args"
+	argsutils "github.com/akaSomix/liqo/pkg/utils/args"
 )
 
 // VirtualKubeletOpts defines the custom options associated with the virtual kubelet deployment forging.

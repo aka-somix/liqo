@@ -31,15 +31,15 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	. "github.com/liqotech/liqo/pkg/utils/testutil"
-	"github.com/liqotech/liqo/test/e2e/testconsts"
-	"github.com/liqotech/liqo/test/e2e/testutils/apiserver"
-	"github.com/liqotech/liqo/test/e2e/testutils/microservices"
-	"github.com/liqotech/liqo/test/e2e/testutils/net"
-	"github.com/liqotech/liqo/test/e2e/testutils/storage"
-	"github.com/liqotech/liqo/test/e2e/testutils/tester"
-	"github.com/liqotech/liqo/test/e2e/testutils/util"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	. "github.com/akaSomix/liqo/pkg/utils/testutil"
+	"github.com/akaSomix/liqo/test/e2e/testconsts"
+	"github.com/akaSomix/liqo/test/e2e/testutils/apiserver"
+	"github.com/akaSomix/liqo/test/e2e/testutils/microservices"
+	"github.com/akaSomix/liqo/test/e2e/testutils/net"
+	"github.com/akaSomix/liqo/test/e2e/testutils/storage"
+	"github.com/akaSomix/liqo/test/e2e/testutils/tester"
+	"github.com/akaSomix/liqo/test/e2e/testutils/util"
 )
 
 const (

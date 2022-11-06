@@ -54,7 +54,7 @@ Liqo supports scenarios in which, given two clusters, only one of the two **netw
 ```
 
 By default, *liqoctl* exposes both the authentication service and the network gateway through a **dedicated *LoadBalancer* service**, falling back to a *NodePort* for simpler setups (i.e., KinD and K3s).
-However, more advanced configurations can be achieved by configuring the proper [Helm chart parameters](https://github.com/liqotech/liqo/tree/master/deployments/liqo), either directly or by customizing the installation process [through *liqoctl*](InstallCustomization).
+However, more advanced configurations can be achieved by configuring the proper [Helm chart parameters](https://github.com/akaSomix/liqo/tree/master/deployments/liqo), either directly or by customizing the installation process [through *liqoctl*](InstallCustomization).
 
 An overview of the overall connectivity requirements to establish out-of-band control plane peerings in Liqo is shown in the figure below.
 

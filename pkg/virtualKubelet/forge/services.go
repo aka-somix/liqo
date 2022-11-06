@@ -19,7 +19,7 @@ import (
 	corev1apply "k8s.io/client-go/applyconfigurations/core/v1"
 	"k8s.io/utils/pointer"
 
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 // nodePortUnset -> the value representing an unset NodePort.

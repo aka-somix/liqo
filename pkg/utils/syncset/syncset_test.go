@@ -18,7 +18,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/liqotech/liqo/pkg/utils/syncset"
+	"github.com/akaSomix/liqo/pkg/utils/syncset"
 )
 
 var _ = Describe("SyncSet utility functions", func() {

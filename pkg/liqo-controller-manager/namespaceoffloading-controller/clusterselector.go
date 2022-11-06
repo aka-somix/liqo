@@ -25,10 +25,10 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	offv1alpha1 "github.com/liqotech/liqo/apis/offloading/v1alpha1"
-	mapsv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
-	"github.com/liqotech/liqo/internal/crdReplicator/reflection"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
+	offv1alpha1 "github.com/akaSomix/liqo/apis/offloading/v1alpha1"
+	mapsv1alpha1 "github.com/akaSomix/liqo/apis/virtualkubelet/v1alpha1"
+	"github.com/akaSomix/liqo/internal/crdReplicator/reflection"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
 )
 
 func (r *NamespaceOffloadingReconciler) enforceClusterSelector(ctx context.Context, nsoff *offv1alpha1.NamespaceOffloading,

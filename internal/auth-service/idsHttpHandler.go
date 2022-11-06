@@ -23,7 +23,7 @@ import (
 	"k8s.io/klog/v2"
 	"k8s.io/utils/trace"
 
-	"github.com/liqotech/liqo/pkg/auth"
+	"github.com/akaSomix/liqo/pkg/auth"
 )
 
 // this HTTP handler returns home cluster information to the foreign clusters that are asking for them,

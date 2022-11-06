@@ -29,14 +29,14 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/cache"
 
-	tunneloperator "github.com/liqotech/liqo/internal/liqonet/tunnel-operator"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqonet/conncheck"
-	liqonetns "github.com/liqotech/liqo/pkg/liqonet/netns"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
-	"github.com/liqotech/liqo/pkg/liqonet/utils/links"
-	"github.com/liqotech/liqo/pkg/utils/mapper"
-	"github.com/liqotech/liqo/pkg/utils/restcfg"
+	tunneloperator "github.com/akaSomix/liqo/internal/liqonet/tunnel-operator"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqonet/conncheck"
+	liqonetns "github.com/akaSomix/liqo/pkg/liqonet/netns"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
+	"github.com/akaSomix/liqo/pkg/liqonet/utils/links"
+	"github.com/akaSomix/liqo/pkg/utils/mapper"
+	"github.com/akaSomix/liqo/pkg/utils/restcfg"
 )
 
 type gatewayOperatorFlags struct {

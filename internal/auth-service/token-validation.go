@@ -19,8 +19,8 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/auth"
-	autherrors "github.com/liqotech/liqo/pkg/auth/errors"
+	"github.com/akaSomix/liqo/pkg/auth"
+	autherrors "github.com/akaSomix/liqo/pkg/auth/errors"
 )
 
 type credentialsValidator interface {

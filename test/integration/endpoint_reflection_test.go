@@ -21,8 +21,8 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	liqonetIpam "github.com/liqotech/liqo/pkg/liqonet/ipam"
-	"github.com/liqotech/liqo/pkg/utils/slice"
+	liqonetIpam "github.com/akaSomix/liqo/pkg/liqonet/ipam"
+	"github.com/akaSomix/liqo/pkg/utils/slice"
 )
 
 var _ = Describe("EndpointReflection", func() {

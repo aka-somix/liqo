@@ -20,8 +20,8 @@ import (
 
 	"k8s.io/klog/v2"
 
-	responsetypes "github.com/liqotech/liqo/pkg/identityManager/responseTypes"
-	"github.com/liqotech/liqo/pkg/utils/apiserver"
+	responsetypes "github.com/akaSomix/liqo/pkg/identityManager/responseTypes"
+	"github.com/akaSomix/liqo/pkg/utils/apiserver"
 )
 
 // AWSIdentityInfo contains the information required by a cluster to get a valied IAM-based identity.

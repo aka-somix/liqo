@@ -24,7 +24,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/pkg/discovery"
+	"github.com/akaSomix/liqo/pkg/discovery"
 )
 
 // GetURL retrieves the API server URL either from the configuration or selecting the IP address of a master node (with port 6443).

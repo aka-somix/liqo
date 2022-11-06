@@ -41,16 +41,16 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/metrics"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	"github.com/liqotech/liqo/pkg/liqonet/conncheck"
-	"github.com/liqotech/liqo/pkg/liqonet/iptables"
-	liqonetns "github.com/liqotech/liqo/pkg/liqonet/netns"
-	liqorouting "github.com/liqotech/liqo/pkg/liqonet/routing"
-	"github.com/liqotech/liqo/pkg/liqonet/tunnel"
-	tunnelwg "github.com/liqotech/liqo/pkg/liqonet/tunnel/wireguard"
-	liqonetutils "github.com/liqotech/liqo/pkg/liqonet/utils"
-	liqolabels "github.com/liqotech/liqo/pkg/utils/labels"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	"github.com/akaSomix/liqo/pkg/liqonet/conncheck"
+	"github.com/akaSomix/liqo/pkg/liqonet/iptables"
+	liqonetns "github.com/akaSomix/liqo/pkg/liqonet/netns"
+	liqorouting "github.com/akaSomix/liqo/pkg/liqonet/routing"
+	"github.com/akaSomix/liqo/pkg/liqonet/tunnel"
+	tunnelwg "github.com/akaSomix/liqo/pkg/liqonet/tunnel/wireguard"
+	liqonetutils "github.com/akaSomix/liqo/pkg/liqonet/utils"
+	liqolabels "github.com/akaSomix/liqo/pkg/utils/labels"
 )
 
 // TunnelController type of the tunnel controller.

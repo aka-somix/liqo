@@ -26,11 +26,11 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/discovery"
-	idManTest "github.com/liqotech/liqo/pkg/identityManager/testUtils"
-	"github.com/liqotech/liqo/pkg/utils/csr"
-	"github.com/liqotech/liqo/pkg/utils/testutil"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/discovery"
+	idManTest "github.com/akaSomix/liqo/pkg/identityManager/testUtils"
+	"github.com/akaSomix/liqo/pkg/utils/csr"
+	"github.com/akaSomix/liqo/pkg/utils/testutil"
 )
 
 var _ = Describe("IdentityManager", func() {

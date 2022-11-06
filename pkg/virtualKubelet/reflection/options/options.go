@@ -23,8 +23,8 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/record"
 
-	liqoclient "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	liqoinformers "github.com/liqotech/liqo/pkg/client/informers/externalversions"
+	liqoclient "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	liqoinformers "github.com/akaSomix/liqo/pkg/client/informers/externalversions"
 )
 
 // Keyer retrieves a set of NamespacedNames referring to the reconciliation targets from the object metadata.

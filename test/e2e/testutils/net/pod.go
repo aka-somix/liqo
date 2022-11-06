@@ -25,12 +25,12 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	liqoconst "github.com/liqotech/liqo/pkg/consts"
-	foreignclusterutils "github.com/liqotech/liqo/pkg/utils/foreignCluster"
-	"github.com/liqotech/liqo/pkg/virtualKubelet"
-	"github.com/liqotech/liqo/test/e2e/testutils/tester"
-	"github.com/liqotech/liqo/test/e2e/testutils/util"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	liqoconst "github.com/akaSomix/liqo/pkg/consts"
+	foreignclusterutils "github.com/akaSomix/liqo/pkg/utils/foreignCluster"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet"
+	"github.com/akaSomix/liqo/test/e2e/testutils/tester"
+	"github.com/akaSomix/liqo/test/e2e/testutils/util"
 )
 
 // TesterOpts contains to handle a connectivity tester pod.
@@ -53,7 +53,7 @@ func EnsureNetTesterPods(ctx context.Context, config *tester.ClusterContext, clu
 	}
 
 	// TODO: remove it, check if the problem is related to namespace offloading initialization time.
-	// This is a temporary patch for https://github.com/liqotech/liqo/issues/924
+	// This is a temporary patch for https://github.com/akaSomix/liqo/issues/924
 	time.Sleep(2 * time.Second)
 
 	cluster2Pod := forgeTesterPod(image, ns.Name, cluster2)

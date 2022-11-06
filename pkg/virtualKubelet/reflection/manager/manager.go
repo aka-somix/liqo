@@ -28,11 +28,11 @@ import (
 	"k8s.io/klog/v2"
 	"k8s.io/utils/trace"
 
-	liqoclient "github.com/liqotech/liqo/pkg/client/clientset/versioned"
-	liqoinformers "github.com/liqotech/liqo/pkg/client/informers/externalversions"
-	traceutils "github.com/liqotech/liqo/pkg/utils/trace"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/forge"
-	"github.com/liqotech/liqo/pkg/virtualKubelet/reflection/options"
+	liqoclient "github.com/akaSomix/liqo/pkg/client/clientset/versioned"
+	liqoinformers "github.com/akaSomix/liqo/pkg/client/informers/externalversions"
+	traceutils "github.com/akaSomix/liqo/pkg/utils/trace"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/forge"
+	"github.com/akaSomix/liqo/pkg/virtualKubelet/reflection/options"
 )
 
 var _ Manager = (*manager)(nil)

@@ -19,9 +19,9 @@ import (
 
 	"k8s.io/client-go/rest"
 
-	discoveryv1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
-	"github.com/liqotech/liqo/pkg/auth"
-	responsetypes "github.com/liqotech/liqo/pkg/identityManager/responseTypes"
+	discoveryv1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/pkg/auth"
+	responsetypes "github.com/akaSomix/liqo/pkg/identityManager/responseTypes"
 )
 
 // IdentityReader provides the interface to retrieve the identities for the remote clusters.

@@ -26,10 +26,10 @@ import (
 	"k8s.io/klog/v2"
 	"k8s.io/utils/trace"
 
-	"github.com/liqotech/liqo/pkg/auth"
-	autherrors "github.com/liqotech/liqo/pkg/auth/errors"
-	"github.com/liqotech/liqo/pkg/utils/authenticationtoken"
-	traceutils "github.com/liqotech/liqo/pkg/utils/trace"
+	"github.com/akaSomix/liqo/pkg/auth"
+	autherrors "github.com/akaSomix/liqo/pkg/auth/errors"
+	"github.com/akaSomix/liqo/pkg/utils/authenticationtoken"
+	traceutils "github.com/akaSomix/liqo/pkg/utils/trace"
 )
 
 // identity handles the certificate identity http request.

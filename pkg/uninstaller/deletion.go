@@ -24,7 +24,7 @@ import (
 	"k8s.io/client-go/dynamic"
 	"k8s.io/klog/v2"
 
-	discoveryV1alpha1 "github.com/liqotech/liqo/apis/discovery/v1alpha1"
+	discoveryV1alpha1 "github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 )
 
 // UnjoinClusters disables incoming and outgoing peerings with available clusters.

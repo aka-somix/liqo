@@ -23,8 +23,8 @@ import (
 	"github.com/vishvananda/netlink"
 	"golang.org/x/sys/unix"
 
-	netv1alpha1 "github.com/liqotech/liqo/apis/net/v1alpha1"
-	liqoerrors "github.com/liqotech/liqo/pkg/liqonet/errors"
+	netv1alpha1 "github.com/akaSomix/liqo/apis/net/v1alpha1"
+	liqoerrors "github.com/akaSomix/liqo/pkg/liqonet/errors"
 )
 
 var (

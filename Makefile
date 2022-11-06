@@ -31,7 +31,7 @@ BINDIR?=.
 TARGET?=kind
 ctl:
 	$(eval GIT_COMMIT=$(shell git rev-parse HEAD 2>/dev/null || echo "unknown"))
-	go build -o ${BINDIR} -ldflags="-s -w -X 'github.com/liqotech/liqo/pkg/liqoctl/version.liqoctlVersion=$(GIT_COMMIT)'" ./cmd/liqoctl
+	go build -o ${BINDIR} -ldflags="-s -w -X 'github.com/akaSomix/liqo/pkg/liqoctl/version.liqoctlVersion=$(GIT_COMMIT)'" ./cmd/liqoctl
 
 # Install LIQO into a cluster
 install: manifests ctl
@@ -91,7 +91,7 @@ endif
 fmt: gci addlicense
 	go mod tidy
 	go fmt ./...
-	find . -type f -name '*.go' -a ! -name '*zz_generated*' -exec $(GCI) write -s standard -s default -s "prefix(github.com/liqotech/liqo)" {} \;
+	find . -type f -name '*.go' -a ! -name '*zz_generated*' -exec $(GCI) write -s standard -s default -s "prefix(github.com/akaSomix/liqo)" {} \;
 	find . -type f -name '*.go' -exec $(ADDLICENSE) -l apache -c "The Liqo Authors" -y "2019-$(shell date +%Y)" {} \;
 
 # Install golangci-lint if not available
@@ -130,11 +130,11 @@ generate-groups:
 	fi
 	rm -rf pkg/client
 	hack/code-generator/generate-groups.sh client,lister,informer \
-		github.com/liqotech/liqo/pkg/client github.com/liqotech/liqo/apis \
+		github.com/akaSomix/liqo/pkg/client github.com/akaSomix/liqo/apis \
 		"virtualkubelet:v1alpha1" \
 		--output-base ./ \
 		-h hack/boilerplate.go.txt && \
-	mv github.com/liqotech/liqo/pkg/client pkg/ && \
+	mv github.com/akaSomix/liqo/pkg/client pkg/ && \
 	rm -rf github.com
 
 # Generate gRPC files

@@ -19,7 +19,7 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"github.com/liqotech/liqo/apis/discovery/v1alpha1"
+	"github.com/akaSomix/liqo/apis/discovery/v1alpha1"
 )
 
 // ensureLocalTenantNamespace creates the LocalTenantNamespace for the given ForeignCluster, if it is not yet present.
