@@ -374,7 +374,7 @@ func main() {
 		}
 	}
 
-	klog.Info("starting manager as controller manager")
+	klog.Info("starting manager as controller manager PABLO")
 	if err := mgr.Start(ctx); err != nil {
 		klog.Error(err)
 		os.Exit(1)

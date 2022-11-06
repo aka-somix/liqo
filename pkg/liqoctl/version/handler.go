@@ -34,7 +34,7 @@ type Options struct {
 
 // Run implements the version command.
 func (o *Options) Run(ctx context.Context) error {
-	fmt.Printf("Client version: %s\n", liqoctlVersion)
+	fmt.Printf("Client Pablo version: %s\n", liqoctlVersion)
 
 	if o.ClientOnly {
 		return nil
