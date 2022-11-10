@@ -27,7 +27,7 @@ controllerManager:
       limits: {}
       requests: {}
   # -- controller-manager image repository
-  imageName: "liqo/liqo-controller-manager"
+  imageName: "sablito/liqo-controller-manager"
   config:
     # -- It defines the percentage of available cluster resources that you are willing to share with foreign clusters.
     resourceSharingPercentage: 30

@@ -238,3 +238,9 @@ installer/%:
 
 e2e/%:
 	go test ${PWD}/test/$@/... -count=1 -timeout=20m
+
+
+# --- Comandi da refattorizzare
+
+build-component:
+	docker build -t sablito/${COMPONENT} -f ./build/common/Dockerfile  --build-arg COMPONENT=${COMPONENT} .
