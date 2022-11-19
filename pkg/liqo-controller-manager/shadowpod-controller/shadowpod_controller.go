@@ -48,7 +48,7 @@ type Reconciler struct {
 // Reconcile ShadowPods objects.
 func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	nsName := req.NamespacedName
-	klog.V(4).Infof("reconcile shadowpod %s", nsName)
+	klog.Infof("reconcile shadowpod %s", nsName)
 
 	shadowPod := vkv1alpha1.ShadowPod{}
 	if err := r.Get(ctx, nsName, &shadowPod); err != nil {
@@ -72,7 +72,17 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 	utilruntime.Must(ctrl.SetControllerReference(&shadowPod, &pod, r.Scheme))
 
 	if err := r.Get(ctx, nsName, &pod); err == nil {
-		klog.V(4).Infof("skip: pod %q already running", klog.KObj(&pod))
+
+		// Merge labels of the offloaded pod with shadowpod ones.
+		pod.Labels = labels.Merge(shadowPod.Labels, pod.Labels)
+
+		klog.V(4).Infof("pod %q found running, will update it with labels: %v", klog.KObj(&pod), pod.Labels)
+
+		if err := r.Update(ctx, &pod); err != nil {
+			klog.Errorf("unable to update pod %q: %v", klog.KObj(&pod), err)
+			return ctrl.Result{}, err	
+		}
+
 		return ctrl.Result{}, nil
 	}
 
@@ -93,16 +103,17 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 
 // SetupWithManager monitors only updates on ShadowPods.
 func (r *Reconciler) SetupWithManager(mgr ctrl.Manager, workers int) error {
-	// Trigger a reconciliation only for DeleteEvent.
-	deletedPredicate := predicate.Funcs{
+
+	// Trigger a reconciliation only for Delete and Update Events.
+	reconciledPredicates := predicate.Funcs{
 		DeleteFunc:  func(e event.DeleteEvent) bool { return true },
 		CreateFunc:  func(e event.CreateEvent) bool { return false },
-		UpdateFunc:  func(e event.UpdateEvent) bool { return false },
+		UpdateFunc:  func(e event.UpdateEvent) bool { return true },
 		GenericFunc: func(e event.GenericEvent) bool { return false },
 	}
 	return ctrl.NewControllerManagedBy(mgr).
 		For(&vkv1alpha1.ShadowPod{}).
-		Owns(&corev1.Pod{}, builder.WithPredicates(deletedPredicate)).
+		Owns(&corev1.Pod{}, builder.WithPredicates(reconciledPredicates)).
 		WithOptions(controller.Options{MaxConcurrentReconciles: workers}).
 		Complete(r)
 }
