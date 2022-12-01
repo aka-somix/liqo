@@ -5,36 +5,19 @@ metadata:
   name: liqo-network-manager
   namespace: do-not-care
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - secrets
-  - secrets
-  verbs:
   verbs:
   - get
-  - get
   - list
-  - list
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
-  - ""
   - ""
   resources:
-  resources:
-  - services
   - services
   verbs:
-  verbs:
-  - get
   - get
   - list
-  - list
-  - watch
   - watch

@@ -41,15 +41,21 @@ type Reconciler struct {
 	Scheme *runtime.Scheme
 }
 
+func podShouldBeUpdated(newPod *vkv1alpha1.ShadowPod, curPod *corev1.Pod) bool {
+	changesInLabels := !labels.Equals(newPod.GetLabels(), curPod.GetLabels())
+	changesInAnnots := !labels.Equals(newPod.GetAnnotations(), curPod.GetAnnotations())
+
+	return changesInLabels || changesInAnnots
+}
+
 // +kubebuilder:rbac:groups=virtualkubelet.liqo.io,resources=shadowpods,verbs=get;list;watch;update;patch;delete
-// +kubebuilder:rbac:groups=virtualkubelet.liqo.io,resources=shadowpods/finalizers,verbs=get;update;patch
+// +kubebuilder:rbac:groups=virtualkubelet.liqo.io,resources=shadowpods/finalizers,verbs=get;update;patch;delete
 // +kubebuilder:rbac:groups="",resources=pods,verbs=get;list;watch;create;update;patch;delete
 
 // Reconcile ShadowPods objects.
 func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	nsName := req.NamespacedName
 	klog.V(4).Infof("reconcile shadowpod %s", nsName)
-
 	shadowPod := vkv1alpha1.ShadowPod{}
 	if err := r.Get(ctx, nsName, &shadowPod); err != nil {
 		err = client.IgnoreNotFound(err)
@@ -59,26 +65,47 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 		return ctrl.Result{}, err
 	}
 
-	pod := corev1.Pod{
+	// update shadowpod labels to include the "managed-by"
+	shadowPod.SetLabels(labels.Merge(shadowPod.Labels, labels.Set{consts.ManagedByLabelKey: consts.ManagedByShadowPodValue}))
+
+	// if any existing pod is already been created from the shadowpod...
+	existingPod := corev1.Pod{}
+	if err := r.Get(ctx, nsName, &existingPod); err != nil {
+		klog.Error("unable to get pod %q: %v", klog.KObj(&existingPod), err)
+	} else {
+		// ...Update existing pod or skip
+		if podShouldBeUpdated(&shadowPod, &existingPod) {
+			// Update Labels and Annotations
+			existingPod.SetLabels(shadowPod.GetLabels())
+			existingPod.SetAnnotations(shadowPod.GetAnnotations())
+			klog.Infof("pod %q found running, will update it with labels: %v and annotations: %v", klog.KObj(&existingPod), existingPod.Labels, existingPod.Annotations)
+			if err := r.Update(ctx, &existingPod); err != nil {
+				klog.Errorf("unable to update pod %q: %v", klog.KObj(&existingPod), err)
+				return ctrl.Result{}, err
+			}
+		} else {
+			klog.Infof("pod %q found running, skipping update because labels and annotations did not change", klog.KObj(&existingPod))
+		}
+
+		return ctrl.Result{}, nil
+	}
+
+	// ...Else, a brand new Pod must be created, based on the shadowpod.
+	newPod := corev1.Pod{
 		ObjectMeta: metav1.ObjectMeta{
 			Name:        nsName.Name,
 			Namespace:   nsName.Namespace,
-			Labels:      labels.Merge(shadowPod.Labels, labels.Set{consts.ManagedByLabelKey: consts.ManagedByShadowPodValue}),
+			Labels:      shadowPod.Labels,
 			Annotations: shadowPod.Annotations,
 		},
 		Spec: shadowPod.Spec.Pod,
 	}
 
-	utilruntime.Must(ctrl.SetControllerReference(&shadowPod, &pod, r.Scheme))
+	utilruntime.Must(ctrl.SetControllerReference(&shadowPod, &newPod, r.Scheme))
 
-	if err := r.Get(ctx, nsName, &pod); err == nil {
-		klog.V(4).Infof("skip: pod %q already running", klog.KObj(&pod))
-		return ctrl.Result{}, nil
-	}
-
-	if err := r.Create(ctx, &pod); err != nil {
+	if err := r.Create(ctx, &newPod); err != nil {
 		if errors.IsAlreadyExists(err) {
-			klog.V(4).Infof("pod %q already exists", klog.KObj(&pod))
+			klog.V(4).Infof("pod %q already exists", klog.KObj(&newPod))
 			return ctrl.Result{}, nil
 		}
 
@@ -86,23 +113,23 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 		return ctrl.Result{}, err
 	}
 
-	klog.Infof("created pod %q for shadowpod %q", klog.KObj(&pod), klog.KObj(&shadowPod))
+	klog.Infof("created pod %q for shadowpod %q", klog.KObj(&newPod), klog.KObj(&shadowPod))
 
 	return ctrl.Result{}, nil
 }
 
 // SetupWithManager monitors only updates on ShadowPods.
 func (r *Reconciler) SetupWithManager(mgr ctrl.Manager, workers int) error {
-	// Trigger a reconciliation only for DeleteEvent.
-	deletedPredicate := predicate.Funcs{
+	// Trigger a reconciliation only for Delete and Update Events.
+	reconciledPredicates := predicate.Funcs{
 		DeleteFunc:  func(e event.DeleteEvent) bool { return true },
 		CreateFunc:  func(e event.CreateEvent) bool { return false },
-		UpdateFunc:  func(e event.UpdateEvent) bool { return false },
+		UpdateFunc:  func(e event.UpdateEvent) bool { return true },
 		GenericFunc: func(e event.GenericEvent) bool { return false },
 	}
 	return ctrl.NewControllerManagedBy(mgr).
 		For(&vkv1alpha1.ShadowPod{}).
-		Owns(&corev1.Pod{}, builder.WithPredicates(deletedPredicate)).
+		Owns(&corev1.Pod{}, builder.WithPredicates(reconciledPredicates)).
 		WithOptions(controller.Options{MaxConcurrentReconciles: workers}).
 		Complete(r)
 }

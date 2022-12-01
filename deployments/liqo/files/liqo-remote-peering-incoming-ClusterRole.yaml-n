@@ -4,108 +4,55 @@ metadata:
   creationTimestamp: null
   name: liqo-remote-peering-incoming
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - networkconfigs
-  - networkconfigs
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - deletecollection
-  - deletecollection
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - networkconfigs/status
-  - networkconfigs/status
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - deletecollection
-  - deletecollection
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
   - virtualkubelet.liqo.io
-  - virtualkubelet.liqo.io
-  resources:
   resources:
   - namespacemaps
-  - namespacemaps
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - deletecollection
-  - deletecollection
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
-  - virtualkubelet.liqo.io
   - virtualkubelet.liqo.io
   resources:
-  resources:
-  - namespacemaps/status
   - namespacemaps/status
   verbs:
-  verbs:
-  - create
   - create
   - delete
-  - delete
-  - deletecollection
   - deletecollection
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
   - update
-  - update
-  - watch
   - watch

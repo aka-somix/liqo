@@ -4,156 +4,79 @@ metadata:
   creationTimestamp: null
   name: liqo-auth-service
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - certificates.k8s.io
-  - certificates.k8s.io
-  resources:
   resources:
   - certificatesigningrequests
-  - certificatesigningrequests
-  verbs:
   verbs:
   - create
-  - create
-  - get
   - get
   - list
-  - list
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
   - certificates.k8s.io
-  - certificates.k8s.io
-  resources:
   resources:
   - certificatesigningrequests/approval
-  - certificatesigningrequests/approval
-  verbs:
   verbs:
   - update
-  - update
-- apiGroups:
 - apiGroups:
   - certificates.k8s.io
-  - certificates.k8s.io
-  resources:
   resources:
   - signers
-  - signers
-  verbs:
   verbs:
   - approve
-  - approve
 - apiGroups:
-- apiGroups:
-  - ""
   - ""
   resourceNames:
-  resourceNames:
-  - aws-auth
   - aws-auth
   resources:
-  resources:
-  - configmaps
   - configmaps
   verbs:
-  verbs:
-  - get
   - get
   - update
-  - update
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - namespaces
-  - namespaces
-  verbs:
   verbs:
   - create
-  - create
-  - get
   - get
   - list
-  - list
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - nodes
-  - nodes
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - secrets
-  - secrets
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - update
-  - update
-- apiGroups:
 - apiGroups:
   - rbac.authorization.k8s.io
-  - rbac.authorization.k8s.io
-  resources:
   resources:
   - clusterroles
-  - clusterroles
   verbs:
-  verbs:
-  - get
   - get
   - list
-  - list
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
-  - rbac.authorization.k8s.io
   - rbac.authorization.k8s.io
   resources:
-  resources:
-  - rolebindings
   - rolebindings
   verbs:
-  verbs:
-  - create
   - create
   - delete
-  - delete
-  - deletecollection
   - deletecollection
   - get
-  - get
   - patch
-  - patch
-  - update
   - update

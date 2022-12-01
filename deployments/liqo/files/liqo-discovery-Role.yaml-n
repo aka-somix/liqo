@@ -5,42 +5,22 @@ metadata:
   name: liqo-discovery
   namespace: liqo
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - configmaps
-  - configmaps
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
-  - ""
   - ""
   resources:
-  resources:
-  - services
   - services
   verbs:
-  verbs:
-  - get
   - get
   - list
-  - list
-  - watch
   - watch

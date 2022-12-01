@@ -1,33 +1,71 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: liqo-discovery
+rules:
 rules:
 - apiGroups:
+- apiGroups:
+  - ""
   - ""
   resources:
+  resources:
+  - nodes
   - nodes
   verbs:
+  verbs:
+  - get
   - get
   - list
+  - list
+  - watch
   - watch
 - apiGroups:
+- apiGroups:
   - discovery.liqo.io
+  - discovery.liqo.io
+  resources:
   resources:
   - foreignclusters
+  - foreignclusters
+  verbs:
   verbs:
   - create
+  - create
+  - delete
   - delete
   - get
+  - get
+  - list
   - list
   - patch
+  - patch
+  - update
   - update
   - watch
+  - watch
+- apiGroups:
 - apiGroups:
   - discovery.liqo.io
+  - discovery.liqo.io
+  resources:
   resources:
   - foreignclusters/status
+  - foreignclusters/status
+  verbs:
   verbs:
   - create
+  - create
+  - delete
   - delete
   - get
+  - get
+  - list
   - list
   - patch
+  - patch
   - update
+  - update
+  - watch
   - watch

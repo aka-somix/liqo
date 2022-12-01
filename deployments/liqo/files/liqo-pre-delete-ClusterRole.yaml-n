@@ -4,126 +4,64 @@ metadata:
   creationTimestamp: null
   name: liqo-pre-delete
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - apps
-  - apps
-  resources:
   resources:
   - deployments
-  - deployments
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - events
-  - events
-  verbs:
   verbs:
   - create
-  - create
   - patch
-  - patch
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - nodes
-  - nodes
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
   resources:
   - foreignclusters
-  - foreignclusters
-  verbs:
   verbs:
   - delete
-  - delete
-  - deletecollection
   - deletecollection
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - networkconfigs
-  - networkconfigs
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - tunnelendpoints
-  - tunnelendpoints
-  verbs:
   verbs:
   - get
-  - get
   - list
-  - list
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
-  - offloading.liqo.io
   - offloading.liqo.io
   resources:
-  resources:
-  - namespaceoffloadings
   - namespaceoffloadings
   verbs:
-  verbs:
-  - get
   - get
   - list
-  - list
-  - watch
   - watch

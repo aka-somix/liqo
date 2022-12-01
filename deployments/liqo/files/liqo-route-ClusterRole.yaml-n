@@ -4,86 +4,44 @@ metadata:
   creationTimestamp: null
   name: liqo-route
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - events
-  - events
-  verbs:
   verbs:
   - create
-  - create
-  - patch
   - patch
 - apiGroups:
-- apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - nodes
-  - nodes
-  verbs:
   verbs:
   - get
-  - get
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - pods
-  - pods
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - tunnelendpoints
-  - tunnelendpoints
   verbs:
-  verbs:
-  - get
   - get
   - list
-  - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - tunnelendpoints/status
-  - tunnelendpoints/status
-  verbs:
   verbs:
   - get
-  - get
   - patch
-  - patch
-  - update
   - update

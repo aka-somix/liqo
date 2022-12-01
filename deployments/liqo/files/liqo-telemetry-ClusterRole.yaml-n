@@ -4,88 +4,45 @@ metadata:
   creationTimestamp: null
   name: liqo-telemetry
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - configmaps
-  - configmaps
-  - nodes
   - nodes
   - pods
-  - pods
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
   resources:
   - foreignclusters
-  - foreignclusters
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - tunnelendpoints
-  - tunnelendpoints
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - offloading.liqo.io
-  - offloading.liqo.io
-  resources:
   resources:
   - namespaceoffloadings
-  - namespaceoffloadings
-  verbs:
   verbs:
   - get
-  - get
   - list
-  - list
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
-  - sharing.liqo.io
   - sharing.liqo.io
   resources:
-  resources:
-  - resourceoffers
   - resourceoffers
   verbs:
-  verbs:
-  - get
   - get
   - list
-  - list
-  - watch
   - watch

@@ -4,852 +4,427 @@ metadata:
   creationTimestamp: null
   name: liqo-controller-manager
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - namespaces
-  - namespaces
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - nodes
-  - nodes
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - nodes/finalizers
-  - nodes/finalizers
-  verbs:
   verbs:
   - get
-  - get
-  - patch
   - patch
   - update
-  - update
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - pods
-  - pods
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - apps
-  - apps
-  resources:
   resources:
   - deployments
-  - deployments
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - certificates.k8s.io
-  - certificates.k8s.io
-  resources:
   resources:
   - certificatesigningrequests
-  - certificatesigningrequests
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - certificates.k8s.io
-  - certificates.k8s.io
-  resources:
   resources:
   - certificatesigningrequests/approval
-  - certificatesigningrequests/approval
-  verbs:
   verbs:
   - update
-  - update
-- apiGroups:
 - apiGroups:
   - certificates.k8s.io
-  - certificates.k8s.io
-  resources:
   resources:
   - certificatesigningrequests/status
-  - certificatesigningrequests/status
-  verbs:
   verbs:
   - update
-  - update
-- apiGroups:
 - apiGroups:
   - certificates.k8s.io
-  - certificates.k8s.io
-  resourceNames:
   resourceNames:
   - beta.eks.amazonaws.com/app-serving
-  - beta.eks.amazonaws.com/app-serving
-  resources:
   resources:
   - signers
-  - signers
-  verbs:
   verbs:
   - approve
-  - approve
-- apiGroups:
 - apiGroups:
   - certificates.k8s.io
-  - certificates.k8s.io
-  resourceNames:
   resourceNames:
   - kubernetes.io/kubelet-serving
-  - kubernetes.io/kubelet-serving
-  resources:
   resources:
   - signers
-  - signers
-  verbs:
   verbs:
   - approve
-  - approve
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - events
-  - events
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - namespaces
-  - namespaces
-  verbs:
   verbs:
   - create
-  - create
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - nodes
-  - nodes
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - persistentvolumeclaims
-  - persistentvolumeclaims
-  - persistentvolumes
   - persistentvolumes
   verbs:
-  verbs:
-  - create
   - create
   - delete
-  - delete
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - secrets
-  - secrets
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - serviceaccounts
-  - serviceaccounts
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
   resources:
   - foreignclusters
-  - foreignclusters
-  verbs:
   verbs:
   - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - discovery.liqo.io
+  resources:
+  - foreignclusters/finalizers
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - discovery.liqo.io
+  resources:
+  - foreignclusters/finalizers
+  - foreignclusters/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - discovery.liqo.io
+  resources:
+  - foreignclusters/status
+  verbs:
   - create
   - delete
-  - delete
-  - get
   - get
   - list
-  - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
-  resources:
-  - foreignclusters/finalizers
-  - foreignclusters/finalizers
-  verbs:
-  verbs:
-  - get
-  - get
-  - patch
-  - patch
-  - update
-  - update
-- apiGroups:
-- apiGroups:
-  - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
-  resources:
-  - foreignclusters/finalizers
-  - foreignclusters/finalizers
-  - foreignclusters/status
-  - foreignclusters/status
-  verbs:
-  verbs:
-  - get
-  - get
-  - patch
-  - patch
-  - update
-  - update
-- apiGroups:
-- apiGroups:
-  - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
-  resources:
-  - foreignclusters/status
-  - foreignclusters/status
-  verbs:
-  verbs:
-  - create
-  - create
-  - delete
-  - delete
-  - get
-  - get
-  - list
-  - list
-  - patch
-  - patch
-  - update
-  - update
-  - watch
-  - watch
-- apiGroups:
-- apiGroups:
-  - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
   resources:
   - resourcerequests
-  - resourcerequests
-  verbs:
   verbs:
   - create
+  - delete
+  - deletecollection
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - discovery.liqo.io
+  resources:
+  - resourcerequests/finalizers
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - discovery.liqo.io
+  resources:
+  - resourcerequests/finalizers
+  - resourcerequests/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - discovery.liqo.io
+  resources:
+  - resourcerequests/status
+  verbs:
   - create
   - delete
-  - delete
-  - deletecollection
-  - deletecollection
-  - get
-  - get
-  - list
-  - list
-  - patch
-  - patch
-  - update
-  - update
-  - watch
-  - watch
-- apiGroups:
-- apiGroups:
-  - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
-  resources:
-  - resourcerequests/finalizers
-  - resourcerequests/finalizers
-  verbs:
-  verbs:
-  - get
-  - get
-  - patch
-  - patch
-  - update
-  - update
-- apiGroups:
-- apiGroups:
-  - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
-  resources:
-  - resourcerequests/finalizers
-  - resourcerequests/finalizers
-  - resourcerequests/status
-  - resourcerequests/status
-  verbs:
-  verbs:
-  - get
-  - get
-  - patch
-  - patch
-  - update
-  - update
-- apiGroups:
-- apiGroups:
-  - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
-  resources:
-  - resourcerequests/status
-  - resourcerequests/status
-  verbs:
-  verbs:
-  - create
-  - create
-  - delete
-  - delete
-  - deletecollection
   - deletecollection
   - list
-  - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - metrics.liqo.io
-  - metrics.liqo.io
-  resources:
   resources:
   - scrape
-  - scrape
-  - scrape/metrics
   - scrape/metrics
   verbs:
-  verbs:
-  - get
   - get
 - apiGroups:
-- apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - networkconfigs
-  - networkconfigs
-  verbs:
   verbs:
   - '*'
-  - '*'
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - networkconfigs/status
-  - networkconfigs/status
-  verbs:
   verbs:
   - '*'
-  - '*'
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - tunnelendpoints
-  - tunnelendpoints
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - tunnelendpoints/status
-  - tunnelendpoints/status
-  verbs:
   verbs:
   - get
-  - get
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - offloading.liqo.io
-  - offloading.liqo.io
-  resources:
   resources:
   - namespaceoffloadings
-  - namespaceoffloadings
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - offloading.liqo.io
-  - offloading.liqo.io
-  resources:
   resources:
   - namespaceoffloadings/finalizers
-  - namespaceoffloadings/finalizers
-  verbs:
   verbs:
   - get
-  - get
-  - patch
   - patch
   - update
-  - update
-- apiGroups:
 - apiGroups:
   - offloading.liqo.io
-  - offloading.liqo.io
-  resources:
   resources:
   - namespaceoffloadings/status
-  - namespaceoffloadings/status
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - rbac.authorization.k8s.io
-  - rbac.authorization.k8s.io
-  resources:
   resources:
   - clusterrolebindings
-  - clusterrolebindings
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - deletecollection
-  - deletecollection
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
   - rbac.authorization.k8s.io
-  - rbac.authorization.k8s.io
-  resources:
   resources:
   - clusterroles
-  - clusterroles
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - rbac.authorization.k8s.io
-  - rbac.authorization.k8s.io
-  resources:
   resources:
   - rolebindings
-  - rolebindings
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - deletecollection
-  - deletecollection
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
   - sharing.liqo.io
-  - sharing.liqo.io
-  resources:
   resources:
   - resourceoffers
-  - resourceoffers
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - deletecollection
-  - deletecollection
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
   - sharing.liqo.io
-  - sharing.liqo.io
-  resources:
   resources:
   - resourceoffers/finalizers
-  - resourceoffers/finalizers
-  verbs:
   verbs:
   - get
-  - get
-  - patch
   - patch
   - update
-  - update
-- apiGroups:
 - apiGroups:
   - sharing.liqo.io
-  - sharing.liqo.io
-  resources:
   resources:
   - resourceoffers/status
-  - resourceoffers/status
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - deletecollection
-  - deletecollection
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - storage.k8s.io
-  - storage.k8s.io
-  resources:
   resources:
   - storageclasses
-  - storageclasses
-  verbs:
   verbs:
   - get
-  - get
-  - list
   - list
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - virtualkubelet.liqo.io
-  - virtualkubelet.liqo.io
-  resources:
   resources:
   - namespacemaps
-  - namespacemaps
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - virtualkubelet.liqo.io
-  - virtualkubelet.liqo.io
-  resources:
   resources:
   - namespacemaps/finalizers
-  - namespacemaps/finalizers
-  verbs:
   verbs:
   - get
-  - get
-  - patch
   - patch
   - update
-  - update
-- apiGroups:
 - apiGroups:
   - virtualkubelet.liqo.io
-  - virtualkubelet.liqo.io
-  resources:
   resources:
   - shadowpods
-  - shadowpods
-  verbs:
   verbs:
   - delete
-  - delete
-  - get
   - get
   - list
-  - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - virtualkubelet.liqo.io
-  - virtualkubelet.liqo.io
-  resources:
   resources:
   - shadowpods/finalizers
-  - shadowpods/finalizers
-  verbs:
   verbs:
   - delete
-  - delete
-  - get
   - get
   - patch
-  - patch
-  - update
   - update

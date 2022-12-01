@@ -2,38 +2,36 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   creationTimestamp: null
-  name: liqo-metric-agent
-rules:
+  name: liqo-crd-replicator
 rules:
 - apiGroups:
-- apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - namespaces
-  - namespaces
-  - nodes
-  - nodes
-  - pods
-  - pods
   verbs:
-  verbs:
-  - get
   - get
   - list
-  - list
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
-  - ""
   - ""
   resources:
-  resources:
-  - nodes/proxy
-  - nodes/proxy
-  verbs:
+  - secrets
   verbs:
   - get
+  - list
+- apiGroups:
+  - discovery.liqo.io
+  resources:
+  - foreignclusters
+  verbs:
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - discovery.liqo.io
+  resources:
+  - foreignclusters/status
+  verbs:
   - get

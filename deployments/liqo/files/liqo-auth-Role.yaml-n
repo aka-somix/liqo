@@ -2,45 +2,30 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   creationTimestamp: null
-  name: liqo-discovery
-  namespace: liqo
-rules:
+  name: liqo-auth-service
+  namespace: do-not-care
 rules:
 - apiGroups:
-- apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - configmaps
-  - configmaps
-  verbs:
   verbs:
   - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - secrets
+  verbs:
   - create
   - delete
-  - delete
-  - get
   - get
   - list
-  - list
+  - patch
   - update
-  - update
-  - watch
-  - watch
-- apiGroups:
-- apiGroups:
-  - ""
-  - ""
-  resources:
-  resources:
-  - services
-  - services
-  verbs:
-  verbs:
-  - get
-  - get
-  - list
-  - list
-  - watch
   - watch

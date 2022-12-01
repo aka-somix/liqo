@@ -4,56 +4,29 @@ metadata:
   creationTimestamp: null
   name: liqo-remote-peering-basic
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - discovery.liqo.io
-  - discovery.liqo.io
-  resources:
   resources:
   - resourcerequests
-  - resourcerequests
-  verbs:
   verbs:
   - create
-  - create
-  - delete
   - delete
   - deletecollection
-  - deletecollection
-  - get
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
-  - discovery.liqo.io
   - discovery.liqo.io
   resources:
-  resources:
-  - resourcerequests/status
   - resourcerequests/status
   verbs:
-  verbs:
-  - create
   - create
   - delete
-  - delete
-  - deletecollection
   - deletecollection
   - get
-  - get
-  - list
   - list
   - patch
-  - patch
   - update
-  - update
-  - watch
   - watch

@@ -3,7 +3,7 @@ module github.com/liqotech/liqo
 go 1.19
 
 require (
-	github.com/Azure/azure-sdk-for-go v67.1.0+incompatible
+	github.com/Azure/azure-sdk-for-go v67.2.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.28
 	github.com/Azure/go-autorest/autorest/azure/auth v0.5.11
 	github.com/aws/aws-sdk-go v1.44.92
@@ -14,15 +14,15 @@ require (
 	github.com/goombaio/namegenerator v0.0.0-20181006234301-989e774b106e
 	github.com/grandcat/zeroconf v1.0.0
 	github.com/gruntwork-io/gruntwork-cli v0.7.2
-	github.com/gruntwork-io/terratest v0.41.4
+	github.com/gruntwork-io/terratest v0.41.7
 	github.com/jinzhu/copier v0.3.5
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/mattn/go-isatty v0.0.16
 	github.com/metal-stack/go-ipam v1.11.3
 	github.com/miekg/dns v1.1.50
 	github.com/mittwald/go-helm-client v0.11.5
-	github.com/onsi/ginkgo/v2 v2.5.1
-	github.com/onsi/gomega v1.24.1
+	github.com/onsi/ginkgo/v2 v2.6.1
+	github.com/onsi/gomega v1.24.2
 	github.com/openshift/api v0.0.0-20210521075222-e273a339932a
 	github.com/openshift/client-go v0.0.0-20210521082421-73d9475a9142
 	github.com/pkg/errors v0.9.1
@@ -43,7 +43,7 @@ require (
 	google.golang.org/grpc v1.51.0
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/yaml.v3 v3.0.1
-	helm.sh/helm/v3 v3.10.2
+	helm.sh/helm/v3 v3.10.3
 	inet.af/netaddr v0.0.0-20220811202034-502d2d690317
 	k8s.io/api v0.25.5
 	k8s.io/apiextensions-apiserver v0.25.2
@@ -236,11 +236,11 @@ require (
 	go4.org/unsafe/assume-no-moving-gc v0.0.0-20220617031537-928513b29760 // indirect
 	golang.org/x/crypto v0.3.0 // indirect
 	golang.org/x/exp v0.0.0-20221114191408-850992195362
-	golang.org/x/net v0.3.1-0.20221206200815-1e63c2f08a10 // indirect
+	golang.org/x/net v0.4.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20220909003341-f21342109be1 // indirect
 	golang.org/x/term v0.3.0 // indirect
 	golang.org/x/time v0.0.0-20220922220347-f3bd1da661af // indirect
-	golang.org/x/tools v0.3.0 // indirect
+	golang.org/x/tools v0.4.0 // indirect
 	golang.zx2c4.com/wireguard v0.0.0-20220904105730-b51010ba13f0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20221118155620-16455021b5e6 // indirect

@@ -4,36 +4,19 @@ metadata:
   creationTimestamp: null
   name: liqo-metric-agent
 rules:
-rules:
-- apiGroups:
 - apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - namespaces
-  - namespaces
-  - nodes
   - nodes
   - pods
-  - pods
   verbs:
-  verbs:
-  - get
   - get
   - list
-  - list
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
-  - ""
   - ""
   resources:
-  resources:
-  - nodes/proxy
   - nodes/proxy
   verbs:
-  verbs:
-  - get
   - get

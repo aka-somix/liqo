@@ -2,88 +2,68 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   creationTimestamp: null
-  name: liqo-route
-rules:
+  name: liqo-gateway
 rules:
 - apiGroups:
-- apiGroups:
   - ""
-  - ""
-  resources:
   resources:
   - events
-  - events
-  verbs:
   verbs:
   - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - services
+  verbs:
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - net.liqo.io
+  resources:
+  - natmappings
+  verbs:
   - create
-  - patch
-  - patch
-- apiGroups:
-- apiGroups:
-  - ""
-  - ""
-  resources:
-  resources:
-  - nodes
-  - nodes
-  verbs:
-  verbs:
-  - get
-  - get
-- apiGroups:
-- apiGroups:
-  - ""
-  - ""
-  resources:
-  resources:
-  - pods
-  - pods
-  verbs:
-  verbs:
-  - get
+  - delete
   - get
   - list
-  - list
-  - patch
   - patch
   - update
-  - update
-  - watch
   - watch
 - apiGroups:
-- apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - tunnelendpoints
-  - tunnelendpoints
   verbs:
-  verbs:
-  - get
+  - create
+  - delete
   - get
   - list
-  - list
   - patch
-  - patch
-  - update
   - update
   - watch
-  - watch
-- apiGroups:
 - apiGroups:
   - net.liqo.io
-  - net.liqo.io
-  resources:
   resources:
   - tunnelendpoints/status
-  - tunnelendpoints/status
-  verbs:
   verbs:
   - get
-  - get
   - patch
-  - patch
-  - update
   - update

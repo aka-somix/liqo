@@ -1,32 +1,69 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: liqo-crd-replicator
+rules:
 rules:
 - apiGroups:
+- apiGroups:
   - ""
+  - ""
+  resources:
   resources:
   - namespaces
+  - namespaces
+  verbs:
   verbs:
   - get
+  - get
+  - list
   - list
   - watch
+  - watch
+- apiGroups:
 - apiGroups:
   - ""
+  - ""
+  resources:
   resources:
   - secrets
+  - secrets
+  verbs:
   verbs:
   - get
+  - get
+  - list
   - list
 - apiGroups:
+- apiGroups:
   - discovery.liqo.io
+  - discovery.liqo.io
+  resources:
   resources:
   - foreignclusters
+  - foreignclusters
+  verbs:
   verbs:
   - get
+  - get
+  - list
   - list
   - patch
+  - patch
+  - update
   - update
   - watch
+  - watch
+- apiGroups:
 - apiGroups:
   - discovery.liqo.io
+  - discovery.liqo.io
+  resources:
   resources:
   - foreignclusters/status
+  - foreignclusters/status
   verbs:
+  verbs:
+  - get
   - get
