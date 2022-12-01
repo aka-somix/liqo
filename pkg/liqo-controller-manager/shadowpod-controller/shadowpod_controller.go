@@ -48,7 +48,7 @@ type Reconciler struct {
 // Reconcile ShadowPods objects.
 func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	nsName := req.NamespacedName
-	klog.Infof("reconcile shadowpod %s", nsName)
+	klog.V(4).Infof("reconcile shadowpod %s", nsName)
 
 	shadowPod := vkv1alpha1.ShadowPod{}
 	if err := r.Get(ctx, nsName, &shadowPod); err != nil {
