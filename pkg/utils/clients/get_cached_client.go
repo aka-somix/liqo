@@ -12,8 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Package cachedclient contains utility methods to create a new controller runtime client with cache.
-package cachedclient
+package clients
 
 import (
 	"context"
