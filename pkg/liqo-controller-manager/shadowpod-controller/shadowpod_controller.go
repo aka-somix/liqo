@@ -33,6 +33,8 @@ import (
 
 	vkv1alpha1 "github.com/liqotech/liqo/apis/virtualkubelet/v1alpha1"
 	"github.com/liqotech/liqo/pkg/consts"
+	clients "github.com/liqotech/liqo/pkg/utils/clients"
+	corev1apply "k8s.io/client-go/applyconfigurations/core/v1"
 )
 
 // Reconciler reconciles a ShadowPod object.
@@ -49,7 +51,7 @@ func podShouldBeUpdated(newPod *vkv1alpha1.ShadowPod, curPod *corev1.Pod) bool {
 }
 
 // +kubebuilder:rbac:groups=virtualkubelet.liqo.io,resources=shadowpods,verbs=get;list;watch;update;patch;delete
-// +kubebuilder:rbac:groups=virtualkubelet.liqo.io,resources=shadowpods/finalizers,verbs=get;update;patch;delete
+// +kubebuilder:rbac:groups=virtualkubelet.liqo.io,resources=shadowpods/finalizers,verbs=get;update;patch
 // +kubebuilder:rbac:groups="",resources=pods,verbs=get;list;watch;create;update;patch;delete
 
 // Reconcile ShadowPods objects.
@@ -76,13 +78,20 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 		// ...Update existing pod or skip
 		if podShouldBeUpdated(&shadowPod, &existingPod) {
 			// Update Labels and Annotations
-			existingPod.SetLabels(shadowPod.GetLabels())
-			existingPod.SetAnnotations(shadowPod.GetAnnotations())
-			klog.Infof("pod %q found running, will update it with labels: %v and annotations: %v", klog.KObj(&existingPod), existingPod.Labels, existingPod.Annotations)
-			if err := r.Update(ctx, &existingPod); err != nil {
+			klog.V(4).Infof("pod %q found running, will update it with labels: %v and annotations: %v", klog.KObj(&existingPod), existingPod.Labels, existingPod.Annotations)
+
+			// Create Apply object for Existing Pod
+			apply := corev1apply.Pod(existingPod.Name, existingPod.Namespace).
+			WithLabels(shadowPod.GetLabels()).
+			WithAnnotations(shadowPod.GetAnnotations())
+
+			if err := r.Patch(ctx, &existingPod, clients.Patch(apply), client.ForceOwnership, client.FieldOwner("shadow-pod")); err != nil {
 				klog.Errorf("unable to update pod %q: %v", klog.KObj(&existingPod), err)
 				return ctrl.Result{}, err
 			}
+
+			klog.Infof("updated pod %q with success.", klog.KObj(&existingPod))
+		
 		} else {
 			klog.Infof("pod %q found running, skipping update because labels and annotations did not change", klog.KObj(&existingPod))
 		}
