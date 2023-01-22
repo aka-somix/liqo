@@ -420,7 +420,7 @@ func (npr *NamespacedPodReflector) Exec(ctx context.Context, po, container strin
 		return fmt.Errorf("failed to execute command: %w", err)
 	}
 
-	err = exec.Stream(remotecommand.StreamOptions{
+	err = exec.StreamWithContext(ctx, remotecommand.StreamOptions{
 		Stdin:  attach.Stdin(),
 		Stdout: attach.Stdout(),
 		Stderr: attach.Stderr(),
@@ -458,14 +458,19 @@ func (npr *NamespacedPodReflector) Attach(ctx context.Context, po, container str
 		return fmt.Errorf("failed to execute command: %w", err)
 	}
 
-	err = exec.Stream(remotecommand.StreamOptions{
+	err = exec.StreamWithContext(ctx, remotecommand.StreamOptions{
 		Stdin:  attach.Stdin(),
 		Stdout: attach.Stdout(),
 		Stderr: attach.Stderr(),
 		Tty:    attach.TTY(),
 	})
+
 	if err != nil {
-		klog.Errorf("Failed to exec command in container %q of local pod %q (remote %q): %v", container, npr.LocalRef(po), npr.RemoteRef(po), err)
+		if ctx.Done() != nil {
+			klog.Infof("Attach operation canceled in container %q of local pod %q (remote %q).", container, npr.LocalRef(po), npr.RemoteRef(po))
+			return nil
+		}
+		klog.Errorf("Failed to attach command in container %q of local pod %q (remote %q): %v", container, npr.LocalRef(po), npr.RemoteRef(po), err)
 		return fmt.Errorf("failed to execute command: %w", err)
 	}
 
