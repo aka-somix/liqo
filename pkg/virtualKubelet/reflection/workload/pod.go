@@ -116,10 +116,17 @@ func NewPodReflector(
 
 // NewNamespaced returns a new NamespacedPodReflector instance.
 func (pr *PodReflector) NewNamespaced(opts *options.NamespacedOpts) manager.NamespacedReflector {
+	var err error
 	remote := opts.RemoteFactory.Core().V1().Pods()
-	remote.Informer().AddEventHandler(opts.HandlerFactory(generic.NamespacedKeyer(opts.LocalNamespace)))
+	_, err = remote.Informer().AddEventHandler(opts.HandlerFactory(generic.NamespacedKeyer(opts.LocalNamespace)))
+	if err != nil {
+		klog.Error(err)
+	}
 	remoteShadow := opts.RemoteLiqoFactory.Virtualkubelet().V1alpha1().ShadowPods()
-	remoteShadow.Informer().AddEventHandler(opts.HandlerFactory(generic.NamespacedKeyer(opts.LocalNamespace)))
+	_, err = remoteShadow.Informer().AddEventHandler(opts.HandlerFactory(generic.NamespacedKeyer(opts.LocalNamespace)))
+	if err != nil {
+		klog.Error(err)
+	}
 	remoteSecrets := opts.RemoteFactory.Core().V1().Secrets()
 
 	reflector := &NamespacedPodReflector{
@@ -149,7 +156,10 @@ func (pr *PodReflector) NewNamespaced(opts *options.NamespacedOpts) manager.Name
 
 // NewFallback returns a new FallbackReflector instance.
 func (pr *PodReflector) NewFallback(opts *options.ReflectorOpts) manager.FallbackReflector {
-	opts.LocalPodInformer.Informer().AddEventHandler(opts.HandlerFactory(generic.BasicKeyer()))
+	_, err := opts.LocalPodInformer.Informer().AddEventHandler(opts.HandlerFactory(generic.BasicKeyer()))
+	if err != nil {
+		klog.Error(err)
+	}
 	return &FallbackPodReflector{
 		localPods:       opts.LocalPodInformer.Lister(),
 		localPodsClient: opts.LocalClient.CoreV1().Pods,

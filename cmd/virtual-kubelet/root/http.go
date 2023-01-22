@@ -75,7 +75,7 @@ func setupHTTPServer(ctx context.Context, handler workload.PodHandler, localClie
 
 	podRoutes := api.PodHandlerConfig{
 		RunInContainer:        handler.Exec,
-		AttachToContainer: 		 handler.Attach,
+		AttachToContainer:     handler.Attach,
 		GetContainerLogs:      handler.Logs,
 		GetStatsSummary:       handler.Stats,
 		GetPodsFromKubernetes: handler.List,
